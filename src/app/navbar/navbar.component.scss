@@ -1,0 +1,36 @@
+nav {
+    height: 10vh;
+   
+    border-bottom: 2px solid grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(91, 91, 172);
+}
+
+.logo{
+    font-size: 55px;
+    margin: 0 18px;
+    cursor: pointer;
+  
+}
+
+.logo:hover {
+    color: red;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 13px;
+}
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
