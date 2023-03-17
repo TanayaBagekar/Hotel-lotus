@@ -1,0 +1,18 @@
+.container {
+    width: 95vw;
+    position: relative;
+    right: 40px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.main-body {
+    padding-top: 20px;
+    margin: 0 auto;
+    max-width: 1750px;
+    mat-form-field {
+        width: 100%;
+    }
+}
