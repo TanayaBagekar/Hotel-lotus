@@ -1,26 +1,29 @@
 <div class="container">
-    <h1 style="margin: 10px;">SignUp Form</h1>
+    <div class="header"> 
+        <h1 style="margin: 10px;">SignUp Form</h1>
     <p>Create your account for free !!</p>
-    <form [formGroup]="signupForm" (ngSubmit)="getValue()">
-        <div>
+    </div>
+    
+    <form [formGroup]="signupForm" (ngSubmit)="getValue(signupForm.value)">
+        <div class="row">
             First Name : 
-            <input type="text"  placeholder="First Name" formControlName="fname" required>
+            <input type="text"  placeholder="First Name" name="fname" formControlName="fname" required>
             
             Last Name : 
-            <input type="text"   placeholder="Last Name" formControlName="lname">
+            <input type="text" name="lname"  placeholder="Last Name" formControlName="lname">
            
           
         </div>
        
-        <div >
+        <div class="row" >
             Gender:
-            <input type="radio"  id="male" formControlName="gender">Male
-            <input type="radio"  id="female" formControlName="gender">Female
+            <input type="radio"  id="male" value="male" formControlName="gender">Male
+            <input type="radio"  id="female" value="female" formControlName="gender">Female
             Date Of Birth:
             <input type="date" name="date" id="date" formControlName="DOB">
         </div>
        
-        <div>
+        <div class="row">
             Mo Number : 
             <input type="text"  placeholder="Phone Number"  pattern="[7-9]{1}[0-9]{9}" maxlength="10" minlength="10" formControlName="phone">
             
@@ -30,20 +33,20 @@
         </div>
        
         
-        <div>
+        <div class="row">
             Username : 
             <input type="text"  placeholder="Username" formControlName="username">
             Password : 
             <input type="password"  placeholder="Password" formControlName="password">
         </div>
         
-        <div>
+        <div class="row">
             Confirm Password : 
             <input type="text"  placeholder="Confirm Password" formControlName="cpassword">
         </div>
-        <div >
-            <input type="submit"  value="Submit">
-            <input type="reset" value="Reset">
+        <div class="row" >
+            <input type="submit" class="bttn" value="Submit">
+            <input type="reset" class="bttn" value="Reset">
         </div>
     </form>
 </div>
