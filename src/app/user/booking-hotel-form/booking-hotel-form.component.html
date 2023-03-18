@@ -1,0 +1,37 @@
+
+<div class="container">
+    <div class="header">
+        <h1>
+            Booking Hotel Form
+        </h1>
+    </div>
+    <form [formGroup]="registerForm" (ngsubmit)="hotelData(registerForm.value)">
+        <div class="row">
+            <input type="text" placeholder="Enter Full Name" formControlName="fname">
+            <input type="text" placeholder="Enter Your Username"formControlName="username">
+        </div>
+        
+        <div class="row">
+            <input type="text" placeholder="Enter Your Email-Id" formControlName="email">
+            
+            <input type="text" placeholder="Enter Your Phone Number" formControlName="phone">
+        </div>
+       
+        <div class="row">
+            <input type="text" placeholder="Booking Date"formControlName="bdate">
+            <input type="text" placeholder="Outing Date"formControlName="odate">
+        </div>
+        
+        <div class="row">
+            <input type="text" placeholder="Booking Amount"formControlName="amount">
+            Transaction:
+            <input type="radio" id="UPI" formControlName="transaction">UPI
+            <input type="radio" id="card"  formControlName="transaction">card
+            <input type="radio" id="Bank"  formControlName="transaction">Bank
+        </div>
+        <Div class="row">
+            <input type="submit" value="Book" routerLink="/user/end">
+            <input type="reset" value="reset">
+        </Div>
+    </form>
+</div>

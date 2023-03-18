@@ -1,1 +1,14 @@
-<p>user works!</p>
+<div class="conatainer">
+    <div class="box" *ngFor="let hotel of hotels">
+        <h1>{{hotel.id}}</h1>
+        <hr>
+        <p><b> name : </b>{{hotel.name}}</p>
+        <p><b>hotel email : </b>{{hotel.email}}</p>
+        <p><b> contact:</b> {{hotel.phone}}</p>
+        <p><b> special dish:</b> {{hotel.menu}}</p>
+        <p><b> area :</b> {{hotel.address}}</p>
+        <p><b> rooms :</b> {{hotel.arooms}}</p>
+        <p><b> workers :</b> {{hotel.workers}}</p>
+        <button mat-raised-button color="accent" routerLink="/user/bookform">Book Hotel</button>
+    </div>
+</div>

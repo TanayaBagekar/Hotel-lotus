@@ -12,7 +12,7 @@ export class LoginComponent {
     console.log(item.pass)
     if(item.username === "Tanaya"){
       if(item.pass === "Tanaya@123"){
-        location.href = 'http://localhost:4200/owner'
+        location.href = 'http://localhost:4200/owner/succes'
       }else{
         alert("Wrong PassWord !!")
       }

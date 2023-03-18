@@ -7,13 +7,25 @@ import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import {MatButtonModule} from '@angular/material/button'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MaterialModule } from '../material.module';
+import { HttpClientModule } from '@angular/common/http';
+import { HotelRegisterComponent } from './hotel-register/hotel-register.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatIconModule } from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatTableModule } from '@angular/material/table';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatInputModule } from '@angular/material/input';
+import { OwnerSuccesComponent } from './owner-succes/owner-succes.component';
 
 
 @NgModule({
   declarations: [
     OwnerComponent,
     SignupComponent,
-    LoginComponent
+    LoginComponent,
+    HotelRegisterComponent,
+    OwnerSuccesComponent
   ],
   imports: [
     CommonModule,
@@ -21,7 +33,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatButtonModule,
     FormsModule,
     ReactiveFormsModule,
-    
+    CommonModule,
+    OwnerRoutingModule,
+    MaterialModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    MatPaginatorModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatToolbarModule,
+    MatTableModule,
+    MatInputModule 
 
   ]
 })

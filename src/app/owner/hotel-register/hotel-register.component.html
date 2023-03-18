@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="header">
+    <h1 style="font-size: 40px;">Hotel Registration Form</h1>
+    </div>
+
+<div class="top">
+    <form [formGroup]="registration" (ngSubmit)="getdata(registration.value)">
+    <div class="row">
+    <input type="text" name='username' placeholder="Enter Owner Username"formControlName="uname" required>
+   
+    <input type="text" name='email'  placeholder="Enter Email-id"formControlName="email">
+    
+    </div>
+    <div class="row">
+        <input type="text"name='Hname'  placeholder="Enter Hotel Name"formControlName="Hname">
+       
+        <input type="text" name='Troom'  placeholder="Enter Total Room" pattern="[0-9]"formControlName="Troom" required>
+      
+    </div>
+    <div class="row">
+        <input type="text" name="location" placeholder="Enter Hotel Location"formControlName="location">
+        <input type="text" name="area" placeholder="Enter Hotel Area"formControlName="area">
+    </div>
+    <div class="row">
+        <input type="text" name="sDish" placeholder="Enter Special Dish"formControlName="sDish">
+        <input type="text" name="Discription" placeholder="Enter Hotel Discription"formControlName="discription">
+    </div>
+    <div class="row">
+    <input type="submit" value="submit" routerLink="/owner/succes" placeholder="submit">
+    <input type="reset" value="reset">
+</div>
+
+</form>
+</div>
+</div>
+

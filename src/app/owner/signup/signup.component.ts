@@ -1,3 +1,4 @@
+import { validateHorizontalPosition } from '@angular/cdk/overlay';
 import { Component } from '@angular/core';
 import {FormControl,FormGroup, Validators} from '@angular/forms'
 
@@ -12,12 +13,12 @@ export class SignupComponent {
     fname: new FormControl('',[Validators.required]),
     lname: new FormControl('',[Validators.required]),
     gender: new FormControl('',[Validators.required]),
-    DOB: new FormControl(''),
-    phone: new FormControl(''),
-    email: new FormControl('',[Validators.email]),
-    username: new FormControl(''),
-    password: new FormControl(''),
-    cpassword: new FormControl(''),
+    DOB: new FormControl('',[Validators.required]),
+    phone: new FormControl('',[Validators.required]),
+    email: new FormControl('',[Validators.required, Validators.email]),
+    username: new FormControl('',[Validators.required]),
+    password: new FormControl('',[Validators.required]),
+    cpassword: new FormControl('',[Validators.required]),
 
   })
 
@@ -25,4 +26,5 @@ export class SignupComponent {
     console.log(data.value);
     
   }
+
 }

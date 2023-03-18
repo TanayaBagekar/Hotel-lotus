@@ -1,0 +1,68 @@
+.container{
+    height: 80vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: white;
+}
+.header{
+    margin: 10px;
+    border-bottom: 2px solid black;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 20px;
+    top: 20px;
+    
+  
+}
+form{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -70px;
+    padding: 25px;
+}
+.row{
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    padding: 15px;
+
+
+}
+input{
+    height: 20px;
+    width: 20vw;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+input[type=submit]{
+    height: 20px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: -2px;
+    
+}
+input[type=reset]{
+    height: 20px;
+    background-color: rgb(97, 97, 198);
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: -2px;
+    
+}
