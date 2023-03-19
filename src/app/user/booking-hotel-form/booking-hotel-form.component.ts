@@ -35,5 +35,6 @@ export class BookingHotelFormComponent {
    hotelData(value:any){
     console.log(value);
     
+    
    }
 }

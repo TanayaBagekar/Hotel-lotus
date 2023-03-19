@@ -38,7 +38,11 @@ export class HotelRegisterComponent {
   console.log(data);
   }
   register(){
-    this.http.registerHotel
+    this.http.registerHotel(this.registration).subscribe((data)=>{
+      this.newRegistrationForm=data
+      console.log(data);
+      
+    })
   }
 
 
