@@ -1,35 +1,23 @@
 {
   "admin": [
     {
-      "id": 1,
-      "fname": "Tanaya",
-      "lname": "Bagekar",
-      "email": "bagekartanaya@gmail.com",
-      "phone": "7798824481",
-      "username": "tanaya053",
-      "gender": "female",
-      "DOB": "31-12-2000",
-      "password": "Tanaya@123",
-      "cpassword": "Tanaya@123"
-    },
-    {
-      "id": 2,
       "fname": "Shrushti",
       "lname": "Bagekar",
-      "email": "bagekarshrushti@gmail.com",
       "phone": "7798824481",
+      "email": "bagekarshrushti@gmail.com",
+      "id": 2,
       "username": "shrushti053",
-      "gender": "female",
+      "gender": "male",
       "DOB": "13-12-2000",
       "password": "Shrushti@123",
       "cpassword": "Shrushti@123"
     },
     {
-      "id": 3,
-      "fname": "Hrushikesh",
+      "fname": "rushikesh",
       "lname": "Kshirsagar",
-      "email": "Hrushi@gmail.com",
       "phone": "7798824551",
+      "email": "Hrushi@gmail.com",
+      "id": 3,
       "username": "Hrushi053",
       "gender": "male",
       "DOB": "05-03-1998",
@@ -72,7 +60,6 @@
       "password": "sangita@123",
       "cpassword": "sangita@123"
     }
-    
   ],
   "owners": [
     {
@@ -110,7 +97,6 @@
       "DOB": "12-09-2000",
       "password": "sangita@123",
       "cpassword": "sangita@123"
-    
     },
     {
       "id": 4,
@@ -148,50 +134,8 @@
       "password": "tanaya@123",
       "cpassword": "tanaya@123"
     }
-    
-    
   ],
   "hotelDetails": [
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "The Royal",
-      "email": "Royal@gmail.com",
-      "phone": "7781128200",
-      "menu": "Fried Rice",
-      "address": "Akola",
-      "arooms": "45",
-      "workers": 60
-    },
-    {
-      "id": 1,
-      "name": "The Hotel Rajdhani",
-      "email": "Rajdhani@gmail.com",
-      "phone": "8881128200",
-      "menu": "Dal-Bati",
-      "address": "Amaravati",
-      "arooms": "30",
-      "workers": 50
-    },
-    {
-      "id": 1,
-      "name": "The Golden ",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "South-Indian Food's",
-      "address": "Shirdi",
-      "arooms": "20",
-      "workers": 30
-    },
     {
       "id": 1,
       "name": "The Famous Hotel",
@@ -200,7 +144,7 @@
       "menu": "Vadapav",
       "address": "Nagpur",
       "arooms": "30",
-      "workers":35
+      "workers": 35
     },
     {
       "id": 1,
@@ -242,9 +186,7 @@
       "arooms": "20",
       "workers": 50
     }
-    
   ],
-  
   "user": [
     {
       "id": 1,

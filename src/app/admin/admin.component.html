@@ -1,1 +1,17 @@
-
+<button (click)="getAdminList()">Fetch Data</button>
+<div class="container">
+        <div class="box" *ngFor="let admin of tanaya">
+            <h1>ID : {{admin.id}}</h1>
+            <h1>First Name : {{admin.fname}}</h1>
+            <h1>Last Name : {{admin.lname}}</h1>
+            <h1>Phone : {{admin.phone}}</h1>
+            <h1>Email : {{admin.email}}</h1>
+            <h1>Username : {{admin.username}}</h1>
+            <h1>DOB : {{admin.DOB}}</h1>
+            <h1>Gender : {{admin.gender}}</h1>
+            <h1>Password : {{admin.password}}</h1>
+            <h1>Confirm Password : {{admin.cpassword}}</h1>
+            <button (click)="openAdminForm(admin)">Edit</button>
+            <button (click)="deleteAdmin(admin.id)">Edit</button>
+        </div>
+</div>

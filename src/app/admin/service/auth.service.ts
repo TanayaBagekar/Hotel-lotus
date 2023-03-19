@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -18,4 +19,11 @@ export class AuthService {
     return this.http.post(this.url, data)
   }
 
+  updateAdmin(id:number, data:any): Observable<any> {
+    return this.http.put(`http://localhost:3000/admin/${id}`, data)
+  }
+
+  deleteAdmin(id:number): Observable<any> {
+    return this.http.delete(`http://localhost:3000/admin/${id}`);
+  }
 }

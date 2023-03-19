@@ -1,0 +1,31 @@
+<div>
+    <h1>Hotel Registration Form</h1>
+</div>
+<form [formGroup]="AdminForm" (ngSubmit)="AdminRegistr()">
+    <div class="content">
+        <div>
+            <input type="text" formControlName="fname" placeholder="Enter first name">
+            <input type="text" formControlName="lname" placeholder="Enter Last name">
+        </div>
+        <div>
+            <input type="text" formControlName="id" placeholder="Enter Last name">
+            <input type="text" formControlName="username" placeholder="Enter Last name">
+        </div>
+        <div>
+            <input type="text" formControlName="DOB" placeholder="Enter Last name">
+            <input type="text" formControlName="email" placeholder="Enter Last name">
+        </div>
+        <div>
+            <input type="text" formControlName="phone" placeholder="Enter Last name">
+            <input type="text" formControlName="gender" placeholder="Enter Last name">
+        </div>
+        <div>
+            <input type="text" formControlName="password" placeholder="Enter Last name">
+            <input type="text" formControlName="cpassword" placeholder="Enter Last name">
+        </div>
+    </div>
+    <div mat-dialog-actions class="action">
+        <button mat-raised-button type="button" [matDialogClose]="true">Cancel</button>
+        <button mat-raised-button color="primary">{{data ? 'Update': 'Save'}}</button>
+    </div>
+</form>

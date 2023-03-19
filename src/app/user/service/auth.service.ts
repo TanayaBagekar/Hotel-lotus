@@ -11,6 +11,6 @@ export class AuthService {
   ) { }
 
   getHotelList(){
-    return this.http.get('http://localhost:3000/hotels')
+    return this.http.get('http://localhost:3000/hotelDetails')
   }
 }
