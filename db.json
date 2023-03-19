@@ -1,348 +1,262 @@
 {
-  "users": [],
-  "hotels": [
+  "admin": [
     {
       "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
+      "fname": "Tanaya",
+      "lname": "Bagekar",
+      "email": "bagekartanaya@gmail.com",
+      "phone": "7798824481",
+      "username": "tanaya053",
+      "gender": "female",
+      "DOB": "31-12-2000",
+      "password": "Tanaya@123",
+      "cpassword": "Tanaya@123"
     },
     {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
+      "id": 2,
+      "fname": "Shrushti",
+      "lname": "Bagekar",
+      "email": "bagekarshrushti@gmail.com",
+      "phone": "7798824481",
+      "username": "shrushti053",
+      "gender": "female",
+      "DOB": "13-12-2000",
+      "password": "Shrushti@123",
+      "cpassword": "Shrushti@123"
     },
     {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
+      "id": 3,
+      "fname": "Hrushikesh",
+      "lname": "Kshirsagar",
+      "email": "Hrushi@gmail.com",
+      "phone": "7798824551",
+      "username": "Hrushi053",
+      "gender": "male",
+      "DOB": "05-03-1998",
+      "password": "Hrushi@123",
+      "cpassword": "Hrushi@123"
     },
     {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
+      "id": 4,
+      "fname": "Ankush",
+      "lname": "Jadhav",
+      "email": "Ankush@gmail.com",
+      "phone": "9798824481",
+      "username": "Ankush053",
+      "gender": "male",
+      "DOB": "31-09-2000",
+      "password": "Ankush@123",
+      "cpassword": "Ankush@123"
     },
     {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
+      "id": 5,
+      "fname": "Bhagyesh",
+      "lname": "Adhikari",
+      "email": "bhagyesh@gmail.com",
+      "phone": "9998824481",
+      "username": "bhagyesh053",
+      "gender": "male",
+      "DOB": "21-08-2000",
+      "password": "bhagyesh@123",
+      "cpassword": "bhagyesh@123"
     },
     {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
-    },
-    {
-      "id": 1,
-      "name": "Golden Leaf",
-      "email": "Golden@gmail.com",
-      "phone": "9881128200",
-      "menu": "manchoorians",
-      "address": "Pune",
-      "arooms": "20",
-      "workers": 30
+      "id": 6,
+      "fname": "Sangita",
+      "lname": "Wankhade",
+      "email": "sabgita@gmail.com",
+      "phone": "8898824481",
+      "username": "Sangita053",
+      "gender": "female",
+      "DOB": "11-09-2000",
+      "password": "sangita@123",
+      "cpassword": "sangita@123"
     }
+    
   ],
-  "admin": [],
-  "owners": [],
-  "bookings": []
+  "owners": [
+    {
+      "id": 6,
+      "fname": "Sangita",
+      "lname": "Wankhade",
+      "email": "sabgita@gmail.com",
+      "phone": "8898824481",
+      "username": "Sangita053",
+      "gender": "female",
+      "DOB": "11-09-2000",
+      "password": "sangita@123",
+      "cpassword": "sangita@123"
+    },
+    {
+      "id": 2,
+      "fname": "Sangita",
+      "lname": "Wankhade",
+      "email": "sabgita@gmail.com",
+      "phone": "8898824481",
+      "username": "Sangita053",
+      "gender": "female",
+      "DOB": "11-09-2000",
+      "password": "sangita@123",
+      "cpassword": "sangita@123"
+    },
+    {
+      "id": 3,
+      "fname": "Sangita",
+      "lname": "Wankhade",
+      "email": "sabgita@gmail.com",
+      "phone": "9898824481",
+      "username": "Sangita053",
+      "gender": "female",
+      "DOB": "12-09-2000",
+      "password": "sangita@123",
+      "cpassword": "sangita@123"
+    
+    },
+    {
+      "id": 4,
+      "fname": "Rashi",
+      "lname": "Tayalkar",
+      "email": "Rashi@gmail.com",
+      "phone": "8798824481",
+      "username": "rashi053",
+      "gender": "female",
+      "DOB": "31-09-2000",
+      "password": "sangita@123",
+      "cpassword": "sangita@123"
+    },
+    {
+      "id": 5,
+      "fname": "Tanaya",
+      "lname": "Bagekar",
+      "email": "Tanaya@gmail.com",
+      "phone": "7898824481",
+      "username": "Tanaya053",
+      "gender": "female",
+      "DOB": "31-1-2000",
+      "password": "sangita@123",
+      "cpassword": "sangita@123"
+    },
+    {
+      "id": 6,
+      "fname": "Tanaya",
+      "lname": "Kshirsagar",
+      "email": "Tanaya@gmail.com",
+      "phone": "7798824481",
+      "username": "Tanaya053",
+      "gender": "female",
+      "DOB": "18-09-1998",
+      "password": "tanaya@123",
+      "cpassword": "tanaya@123"
+    }
+    
+    
+  ],
+  "hotelDetails": [
+    {
+      "id": 1,
+      "name": "Golden Leaf",
+      "email": "Golden@gmail.com",
+      "phone": "9881128200",
+      "menu": "manchoorians",
+      "address": "Pune",
+      "arooms": "20",
+      "workers": 30
+    },
+    {
+      "id": 1,
+      "name": "The Royal",
+      "email": "Royal@gmail.com",
+      "phone": "7781128200",
+      "menu": "Fried Rice",
+      "address": "Akola",
+      "arooms": "45",
+      "workers": 60
+    },
+    {
+      "id": 1,
+      "name": "The Hotel Rajdhani",
+      "email": "Rajdhani@gmail.com",
+      "phone": "8881128200",
+      "menu": "Dal-Bati",
+      "address": "Amaravati",
+      "arooms": "30",
+      "workers": 50
+    },
+    {
+      "id": 1,
+      "name": "The Golden ",
+      "email": "Golden@gmail.com",
+      "phone": "9881128200",
+      "menu": "South-Indian Food's",
+      "address": "Shirdi",
+      "arooms": "20",
+      "workers": 30
+    },
+    {
+      "id": 1,
+      "name": "The Famous Hotel",
+      "email": "famous@gmail.com",
+      "phone": "9881128200",
+      "menu": "Vadapav",
+      "address": "Nagpur",
+      "arooms": "30",
+      "workers":35
+    },
+    {
+      "id": 1,
+      "name": "Golden Leaf",
+      "email": "Golden@gmail.com",
+      "phone": "9881128200",
+      "menu": "Kajoo-Kari",
+      "address": "Thane",
+      "arooms": "40",
+      "workers": 60
+    },
+    {
+      "id": 1,
+      "name": "Green Valley",
+      "email": "Greenvalley@gmail.com",
+      "phone": "9881128200",
+      "menu": "Chat",
+      "address": "Mumbai",
+      "arooms": "20",
+      "workers": 40
+    },
+    {
+      "id": 1,
+      "name": "hotel Lotus",
+      "email": "Chanakya@gmail.com",
+      "phone": "7781128200",
+      "menu": "manchoorians",
+      "address": "Pune",
+      "arooms": "10",
+      "workers": 30
+    },
+    {
+      "id": 1,
+      "name": "Silver Leaf",
+      "email": "leaf@gmail.com",
+      "phone": "7881128200",
+      "menu": "Nudles",
+      "address": "Ahmadnagar",
+      "arooms": "20",
+      "workers": 50
+    }
+    
+  ],
+  
+  "user": [
+    {
+      "id": 1,
+      "fname": "Tanaya",
+      "lname": "Bagekar",
+      "email": "Tanaya@gmail.com",
+      "phone": "7798824481",
+      "username": "Tanaya053",
+      "gender": "female",
+      "DOB": "18-09-1998",
+      "password": "tanaya@123",
+      "cpassword": "tanaya@123"
+    }
+  ]
 }

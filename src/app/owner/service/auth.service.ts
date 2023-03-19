@@ -8,7 +8,7 @@ import { Observable} from 'rxjs'
 export class AuthService {
 
   url = 'http://localhost:3000/owners'
-  url2 = 'http://localhost:3000/hotels'
+  url2 = 'http://localhost:3000/hotelDetails'
 
   constructor(private http: HttpClient) { }
 
@@ -33,10 +33,10 @@ export class AuthService {
   }
 
   deleteHotel(id: number): Observable<any> {
-    return this.http.delete(`http://localhost:3000/hotels/${id}`);
+    return this.http.delete(`http://localhost:3000/hotelDetails/${id}`);
   }
 
   updateHotel(id: number, data: any): Observable<any> {
-    return this.http.put(`http://localhost:3000/hotels/${id}`, data)
+    return this.http.put(`http://localhost:3000/hotelDetails/${id}`, data)
   }
 }

@@ -11,8 +11,16 @@ import { AuthService } from '../service/auth.service';
 })
 export class HotelRegisterComponent {
 
+  newRegistrationForm:any;
+
   constructor(private http:AuthService,
-    private builder:FormBuilder){}
+    private builder:FormBuilder){
+
+      this.http.Getall().subscribe((data)=>{
+        console.log(data);
+        
+      })
+    }
 
     registration= new FormGroup({
      uname: new FormControl('',[Validators.required]) ,
@@ -29,5 +37,15 @@ export class HotelRegisterComponent {
  getdata(data:any){
   console.log(data);
   }
+  register(){
+    this.http.registerHotel
+  }
+
+
+
+  
+  
+
+
 
 }
