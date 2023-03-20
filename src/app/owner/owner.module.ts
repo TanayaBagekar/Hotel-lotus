@@ -17,6 +17,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 import { OwnerSuccesComponent } from './owner-succes/owner-succes.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { OwnerSuccesComponent } from './owner-succes/owner-succes.component';
     MatFormFieldModule,
     MatToolbarModule,
     MatTableModule,
-    MatInputModule 
+    MatInputModule ,
+    MatDialogModule
 
   ]
 })

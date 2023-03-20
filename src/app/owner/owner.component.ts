@@ -36,21 +36,21 @@ export class OwnerComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.getHotelList();
+    this.Getall();
   }
 
-  hotelRegister() {
+  ownerRegister() {
     const dialogRef = this.dialog.open(HotelRegisterComponent)
     dialogRef.afterClosed().subscribe({
       next: (val) => {
         if (val) {
-          this.getHotelList();
+          this.Getall();
         }
       }
     })
   }
 
-  getHotelList() {
+  Getall() {
     this.service.Getall().subscribe({
       next: (res: any) => {
         this.dataSource = new MatTableDataSource(res);
@@ -74,7 +74,7 @@ export class OwnerComponent implements OnInit {
   deleteOwner(id: number) {
     this.service.deleteOwner(id).subscribe({
       next: (res:any) => {
-        this.getHotelList();
+        this.Getall();
       },
       error: console.log,
     })
@@ -88,7 +88,7 @@ export class OwnerComponent implements OnInit {
     dialogRef.afterClosed().subscribe({
       next: (val) => {
         if (val) {
-          this.getHotelList();
+          this.Getall();
         }
       }
     })

@@ -1,34 +1,36 @@
 <div class="container">
     <div class="header">
-    <h1 style="font-size: 40px;" *ngIf="!newRegistrationForm">Hotel Registration Form</h1>
-    <h1 style="font-size: 40px;" *ngIf="newRegistrationForm">Hotel Registration Update Form</h1>
+    <h1 style="font-size: 40px;" >Owner Registration Form</h1>
+    <h1 style="font-size: 40px;" >Owner Registration Update Form</h1>
     </div>
 
 <div class="top">
-    <form [formGroup]="registration" (ngSubmit)="getdata(registration.value)">
+    <form [formGroup]="registration" (ngSubmit)="getdata()">
     <div class="row">
-    <input type="text" name='username' placeholder="Enter Hotel Id"formControlName="uname" required>
+    <input type="text" name='username' placeholder="Enter Owner Id" formControlName="id" required>
    
-    <input type="text" name='email'  placeholder="Enter Hotel Name"formControlName="email">
+    <input type="text" name='email'  placeholder="Enter owner Name" formControlName="oname">
     
     </div>
     <div class="row">
-        <input type="text"name='Hname'  placeholder="Enter Hotel Email-Id"formControlName="Hname">
+        <input type="text"name='hname'  placeholder="Enter Hotel Name" formControlName="hname">
        
-        <input type="text" name='Troom'  placeholder="Enter Hotel Menu" pattern="[0-9]"formControlName="Troom" required>
+        <input type="text" name='phone'  placeholder="Enter Hotel Contact no." pattern="[0-9]" formControlName="phone" required>
       
     </div>
     <div class="row">
-        <input type="text" name="location" placeholder="Enter Hotel Contact Number"formControlName="location">
-        <input type="text" name="area" placeholder="Enter Hotel Available Rooms"formControlName="area">
+        <input type="text" name='gender'  placeholder="Enter gender"  formControlName="gender" required>
+      
+        <input type="date" name="DOB" placeholder="Enter Date Of Birth" formControlName="DOB">
     </div>
     <div class="row">
-        <input type="text" name="sDish" placeholder="Enter Hotel Workers"formControlName="sDish">
-        <input type="text" name="Discription" placeholder="Enter Hotel Discription"formControlName="discription">
+        <input type="password" name="password" placeholder="Enter Hotel password" formControlName="password">
+        <input type="text" name="cpassword" placeholder="Enter confirm password" formControlName="cpassword">
     </div>
     <div class="row">
-    <button mat-raised-button color="assent" *ngIf="!newRegistrationForm" (click)="register()">Register</button>
-    <button mat-raised-button color="assent"  *ngIf="newRegistrationForm" (click)="register()">Update</button>
+    <button mat-raised-button color="assent" >Register</button>
+    <button mat-raised-button color="assent"  [matDialogClose]="true">cancle</button>
+    <button mat-raised-button color="assent"  >{{data? 'upadate' :'save'}}</button>
     <input type="reset" value="reset">
 </div>
 

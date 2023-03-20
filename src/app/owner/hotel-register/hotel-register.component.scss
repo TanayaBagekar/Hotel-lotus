@@ -48,25 +48,15 @@ input{
     border-radius: 15px;
     font-size: 20px;
 }
-input[type=submit]{
-    height: 20px;
-    background-color: green;
-    color: white;
-    font-size: 20px;
-    position: relative;
-    top: -2px;
+
     
-}
-input[type=reset]{
-    height: 20px;
-    background-color: rgb(97, 97, 198);
-    color: white;
-    font-size: 20px;
-    position: relative;
-    top: -2px;
-    
-}
+.row{
 button{
     height: 20px;
     width: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20pxpx;
+}
 }

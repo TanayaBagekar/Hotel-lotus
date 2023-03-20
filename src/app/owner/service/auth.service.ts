@@ -43,4 +43,8 @@ export class AuthService {
   updateHotel(id: number, data: any): Observable<any> {
     return this.http.put(`http://localhost:3000/hotelDetails/${id}`, data)
   }
+
+  updateOwner(id:number,  data:any):Observable<any>{
+    return this.http.patch(`http://localhost:3000/owners/${id}`, data)
+  }
 }
