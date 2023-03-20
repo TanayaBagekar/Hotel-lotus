@@ -29,7 +29,9 @@ export class AdminComponent {
   constructor(
     private dialog : MatDialog,
     private service : AuthService
-  ){}
+  ){
+    this.getAdminList()
+  }
 
   adminRegister() {
     const dialogRef = this.dialog.open(UpdateAdminComponent)

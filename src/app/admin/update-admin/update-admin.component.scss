@@ -17,3 +17,14 @@ h1{
         font-size: 18px;
     }
 }
+
+.action{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button{
+        flex: 1;
+        margin: 20px;
+        height: 40px;
+    }
+}
