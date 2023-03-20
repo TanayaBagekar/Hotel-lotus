@@ -36,6 +36,10 @@ export class AuthService {
     return this.http.delete(`http://localhost:3000/hotelDetails/${id}`);
   }
 
+  deleteOwner(id: number): Observable<any> {
+    return this.http.delete(`http://localhost:3000/owners/${id}`);
+  }
+
   updateHotel(id: number, data: any): Observable<any> {
     return this.http.put(`http://localhost:3000/hotelDetails/${id}`, data)
   }

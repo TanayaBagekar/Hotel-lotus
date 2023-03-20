@@ -24,9 +24,13 @@
                 </ng-container>
 
                 <!-- Progress Column -->
-                <ng-container matColumnDef="name">
+                <ng-container matColumnDef="oname">
                     <th mat-header-cell *matHeaderCellDef mat-sort-header> Hotel Name </th>
-                    <td mat-cell *matCellDef="let row"> {{row.name}}</td>
+                    <td mat-cell *matCellDef="let row"> {{row.oname}}</td>
+                </ng-container>
+                <ng-container matColumnDef="hname">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Hotel Name </th>
+                    <td mat-cell *matCellDef="let row"> {{row.hname}}</td>
                 </ng-container>
                 <!-- Progress Column -->
                 <ng-container matColumnDef="email">
@@ -34,9 +38,9 @@
                     <td mat-cell *matCellDef="let row"> {{row.email}}</td>
                 </ng-container>
                 <!-- Progress Column -->
-                <ng-container matColumnDef="menu">
+                <ng-container matColumnDef="username">
                     <th mat-header-cell *matHeaderCellDef mat-sort-header> Hotel Menu </th>
-                    <td mat-cell *matCellDef="let row"> {{row.menu}}</td>
+                    <td mat-cell *matCellDef="let row"> {{row.username}}</td>
                 </ng-container>
                 <!-- Progress Column -->
                 <ng-container matColumnDef="phone">
@@ -44,19 +48,24 @@
                     <td mat-cell *matCellDef="let row"> {{row.phone}}</td>
                 </ng-container>
                 <!-- Progress Column -->
-                <ng-container matColumnDef="address">
+                <ng-container matColumnDef="gender">
                     <th mat-header-cell *matHeaderCellDef mat-sort-header> Hotel Location </th>
-                    <td mat-cell *matCellDef="let row"> {{row.address}}</td>
+                    <td mat-cell *matCellDef="let row"> {{row.gender}}</td>
                 </ng-container>
                 <!-- Progress Column -->
-                <ng-container matColumnDef="arooms">
+                <ng-container matColumnDef="DOB">
                     <th mat-header-cell *matHeaderCellDef mat-sort-header> Available Rooms </th>
-                    <td mat-cell *matCellDef="let row"> {{row.arooms}} Rooms</td>
+                    <td mat-cell *matCellDef="let row"> {{row.DOB}}</td>
                 </ng-container>
                 <!-- Progress Column -->
-                <ng-container matColumnDef="workers">
+                <ng-container matColumnDef="password">
                     <th mat-header-cell *matHeaderCellDef mat-sort-header> Hotel Workers </th>
-                    <td mat-cell *matCellDef="let row"> {{row.workers}} Workers</td>
+                    <td mat-cell *matCellDef="let row"> {{row.password}}</td>
+                </ng-container>
+                <!-- Progress Column -->
+                <ng-container matColumnDef="cpassword">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Hotel Workers </th>
+                    <td mat-cell *matCellDef="let row"> {{row.cpassword}}</td>
                 </ng-container>
                 <!-- Progress Column -->
                 <ng-container matColumnDef="action">
@@ -65,7 +74,7 @@
                         <button mat-icon-button color="primary" (click)="openHotelForm(row)">
                             <mat-icon>edit</mat-icon>
                         </button>
-                        <button mat-icon-button color="warn" (click)="deleteHotel(row.id)">
+                        <button mat-icon-button color="warn" (click)="deleteOwner(row.id)">
                             <mat-icon>delete</mat-icon>
                         </button>
                     </td>

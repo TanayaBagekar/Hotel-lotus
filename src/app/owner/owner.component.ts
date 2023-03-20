@@ -14,13 +14,15 @@ import { AuthService } from './service/auth.service';
 export class OwnerComponent implements OnInit {
   displayedColumns: string[] = [
     'id',
-    'name',
+    'oname',
+    'hname',
     'email',
     'phone',
-    'menu',
-    'address',
-    'arooms',
-    'workers',
+    'username',
+    'gender',
+    'DOB',
+    'password',
+    'cpassword',
     'action'
   ];
   dataSource!: MatTableDataSource<any>;
@@ -49,7 +51,7 @@ export class OwnerComponent implements OnInit {
   }
 
   getHotelList() {
-    this.service.getHotelList().subscribe({
+    this.service.Getall().subscribe({
       next: (res: any) => {
         this.dataSource = new MatTableDataSource(res);
         this.dataSource.sort = this.sort;
@@ -69,8 +71,8 @@ export class OwnerComponent implements OnInit {
     }
   }
 
-  deleteHotel(id: number) {
-    this.service.deleteHotel(id).subscribe({
+  deleteOwner(id: number) {
+    this.service.deleteOwner(id).subscribe({
       next: (res:any) => {
         this.getHotelList();
       },

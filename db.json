@@ -63,21 +63,9 @@
   ],
   "owners": [
     {
-      "id": 6,
-      "fname": "Sangita",
-      "lname": "Wankhade",
-      "email": "sabgita@gmail.com",
-      "phone": "8898824481",
-      "username": "Sangita053",
-      "gender": "female",
-      "DOB": "11-09-2000",
-      "password": "sangita@123",
-      "cpassword": "sangita@123"
-    },
-    {
       "id": 2,
-      "fname": "Sangita",
-      "lname": "Wankhade",
+      "oname": "Sangita pungale",
+      "hname": "The-Roayl-Hotel",
       "email": "sabgita@gmail.com",
       "phone": "8898824481",
       "username": "Sangita053",
@@ -88,8 +76,8 @@
     },
     {
       "id": 3,
-      "fname": "Sangita",
-      "lname": "Wankhade",
+      "oname": "Sangita Wankhade",
+      "hname": "Rajput Hotel",
       "email": "sabgita@gmail.com",
       "phone": "9898824481",
       "username": "Sangita053",
@@ -100,8 +88,8 @@
     },
     {
       "id": 4,
-      "fname": "Rashi",
-      "lname": "Tayalkar",
+      "oname": "Rashi Tayalkar",
+      "hname": "Golden-leaf",
       "email": "Rashi@gmail.com",
       "phone": "8798824481",
       "username": "rashi053",
@@ -112,8 +100,8 @@
     },
     {
       "id": 5,
-      "fname": "Tanaya",
-      "lname": "Bagekar",
+      "oname": "Tanaya Bagekar",
+      "hname": "Hotel Lotus",
       "email": "Tanaya@gmail.com",
       "phone": "7898824481",
       "username": "Tanaya053",
@@ -124,8 +112,8 @@
     },
     {
       "id": 6,
-      "fname": "Tanaya",
-      "lname": "Kshirsagar",
+      "oname": "Tanaya Kshirsagar",
+      "hname": "The-Grand-Mehfaline",
       "email": "Tanaya@gmail.com",
       "phone": "7798824481",
       "username": "Tanaya053",
@@ -133,6 +121,18 @@
       "DOB": "18-09-1998",
       "password": "tanaya@123",
       "cpassword": "tanaya@123"
+    },
+    {
+      "id": 7,
+      "oname": "Ajay Kharat",
+      "hname": "The-Grand-Mehfaline-2",
+      "email": "kharatajay023@gmail.com",
+      "phone": "8857822354",
+      "username": "Tanaya007",
+      "gender": "male",
+      "DOB": "09-04-2003",
+      "password": "Ajey@123",
+      "cpassword": "Ajey@123"
     }
   ],
   "hotelDetails": [
