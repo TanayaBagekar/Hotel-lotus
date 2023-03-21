@@ -1,40 +1,37 @@
 <div class="container">
     <div class="header">
-    <h1 style="font-size: 40px;" >Owner Registration Form</h1>
-   
+        <h1 style="font-size: 40px;">Owner Registration Form</h1>
+
     </div>
 
-<div class="top">
-    <form [formGroup]="registration" (ngSubmit)="getdata()">
-    <div class="row">
-    <input type="text" name='username' placeholder="Enter Owner Id" formControlName="id" required>
-   
-    <input type="text" name='email'  placeholder="Enter owner Name" formControlName="oname">
-    
-    </div>
-    <div class="row">
-        <input type="text"name='hname'  placeholder="Enter Hotel Name" formControlName="hname">
-       
-        <input type="text" name='phone'  placeholder="Enter Hotel Contact no." pattern="[0-9]" formControlName="phone" required>
-      
-    </div>
-    <div class="row">
-        <input type="text" name='gender'  placeholder="Enter gender"  formControlName="gender" required>
-      
-        <input type="date" name="DOB" placeholder="Enter Date Of Birth" formControlName="DOB">
-    </div>
-    <div class="row">
-        <input type="password" name="password" placeholder="Enter Hotel password" formControlName="password">
-        <input type="text" name="cpassword" placeholder="Enter confirm password" formControlName="cpassword">
-    </div>
-    <div class="row">
-    <button mat-raised-button color="assent" >Register</button>
-    <button mat-raised-button color="assent"  [matDialogClose]="true">cancle</button>
-    <button mat-raised-button color="assent"  >{{data? 'upadate' :'save'}}</button>
-    <input type="reset" value="reset">
-</div>
+    <div class="top">
+        <form [formGroup]="registration" (ngSubmit)="OwnerRegistr()">
+            <div class="row">
+                <input type="text" name='username' placeholder="Enter Owner Id" formControlName="id" required>
+                <input type="text" name='email' placeholder="Enter owner Name" formControlName="oname">
+            </div>
+            <div class="row">
+                <input type="text" name='hname' placeholder="Enter Hotel Name" formControlName="hname">
+                <input type="text" name='phone' placeholder="Enter Hotel Contact no." pattern="[0-9]"
+                    formControlName="phone" required>
+            </div>
+            <div class="row">
+                <input type="text" name='gender' placeholder="Enter gender" formControlName="gender" required>
+                <input type="text" name="DOB" placeholder="Enter Date Of Birth" formControlName="DOB">
+            </div>
+            <div class="row">
+                <input type="text" name='email' placeholder="Enter email" formControlName="email" required>
+                <input type="text" name="username" placeholder="Enter username" formControlName="username">
+            </div>
+            <div class="row">
+                <input type="password" name="password" placeholder="Enter Hotel password" formControlName="password">
+                <input type="text" name="cpassword" placeholder="Enter confirm password" formControlName="cpassword">
+            </div>
+            <div class="row">
+                <button color="warn" mat-raised-button [matDialogClose]="true">Close</button>
+                <button color="accent" mat-raised-button>{{data? 'Update':'Save'}}</button>
+            </div>
 
-</form>
+        </form>
+    </div>
 </div>
-</div>
-

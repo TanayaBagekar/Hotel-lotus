@@ -18,6 +18,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 import { OwnerSuccesComponent } from './owner-succes/owner-succes.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { _MatCheckboxRequiredValidatorModule } from '@angular/material/checkbox';
+
 
 
 @NgModule({
@@ -45,7 +47,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatToolbarModule,
     MatTableModule,
     MatInputModule ,
-    MatDialogModule
+    MatDialogModule,
+    _MatCheckboxRequiredValidatorModule
 
   ]
 })

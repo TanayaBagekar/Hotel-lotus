@@ -37,8 +37,12 @@ form{
     justify-content: column;
     align-items: center;
     padding: 15px;
-
-
+    button{
+        height: 40px;
+        flex: 1;
+        padding: 20px;
+        margin: 15px;
+    }
 }
 input{
     height: 20px;

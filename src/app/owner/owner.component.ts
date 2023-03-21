@@ -4,7 +4,7 @@ import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-import {HotelRegisterComponent} from './hotel-register/hotel-register.component'
+import { HotelRegisterComponent } from './hotel-register/hotel-register.component'
 import { AuthService } from './service/auth.service';
 
 @Component({
@@ -34,7 +34,7 @@ export class OwnerComponent implements OnInit {
   constructor(
     private dialog: MatDialog,
     private service: AuthService,
-  @Inject (MAT_DIALOG_DATA) public data:any,
+    // @Inject(MAT_DIALOG_DATA) public data: any,
   ) { }
 
   ngOnInit(): void {
@@ -75,7 +75,7 @@ export class OwnerComponent implements OnInit {
 
   deleteOwner(id: number) {
     this.service.deleteOwner(id).subscribe({
-      next: (res:any) => {
+      next: (res: any) => {
         this.Getall();
       },
       error: console.log,
