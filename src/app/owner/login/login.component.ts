@@ -20,34 +20,6 @@ export class LoginComponent {
   constructor(public http: AuthService, private router: Router) { }
 
 
-  ngOnInit(): void {
-    this.hotelDetailsGetApiCall();
-    this.OwnerGetAPiCall();
-  }
-
-  ownerLogin(item: any) {
-    console.log(item)
-    console.log(item.username)
-    console.log(item.pass)
-
-  }
-  hotelDetailsGetApiCall() {
-    this.http.getHotelList().subscribe((data) => {
-      this.hotelDetails = data
-      console.log(data);
-    })
-  }
-
-  OwnerGetAPiCall() {
-    this.http.getHotelList().subscribe((data) => {
-      this.ownerData = data
-
-    })
-
-    console.log(this.ownerData);
-  }
-
-
   submit() {
     if (this.hotelDetails) {
       console.log(this.hotelDetails)

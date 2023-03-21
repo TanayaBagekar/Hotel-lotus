@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { AuthService } from '../service/auth.service';
 
@@ -14,7 +14,6 @@ export class HotelRegisterComponent implements OnInit {
 
 
   registration: FormGroup;
-  newRegistrationForm: any;
 
   constructor(
     private http: AuthService,
@@ -25,16 +24,16 @@ export class HotelRegisterComponent implements OnInit {
 
     this.registration = this.builder.group({
 
-      id: '',
-      oname: '',
-      hname: '',
-      email: '',
-      username: '',
-      phone: '',
-      gender: '',
-      DOB: '',
-      password: '',
-      cpassword: ''
+      id: this.builder.control('', Validators.required),
+      oname: this.builder.control('', Validators.required),
+      hname: this.builder.control('', Validators.required),
+      email: this.builder.control('', Validators.compose([Validators.required, Validators.email])),
+      username: this.builder.control('', Validators.required),
+      phone: this.builder.control('', Validators.compose([Validators.required, Validators.minLength(10), Validators.maxLength(10)])),
+      gender: this.builder.control('', Validators.required),
+      DOB: this.builder.control('', Validators.required),
+      password: this.builder.control('', Validators.compose([Validators.required, Validators.minLength(8)])),
+      cpassword: this.builder.control('', Validators.compose([Validators.required, Validators.minLength(8)]))
     })
   }
 
@@ -42,29 +41,31 @@ export class HotelRegisterComponent implements OnInit {
     this.registration.patchValue(this.data)
   }
 
-  OwnerRegistr() {
-    if (this.registration.valid) {
-      if (this.data) {
+  OwnerRegistr(){
+    if(this.registration) {
+      if(this.data){
         this.http.updateOwner(this.data.id, this.registration.value).subscribe({
-          next: (val: any) => {
+          next: (val:any) => {
             alert('Owner Detail Updated Successfully !!');
             this.dialog.close(true);
+  
           },
-          error: (err: any) => {
-            alert(err + "some error occurred")
+          error: (err:any)=>{
+            alert("some error occurred")
           }
         })
-      } else {
+      }else {
         console.log(this.registration.value)
-        this.http.registerOwner(this.registration.value).subscribe({
-          next: (val: any) => {
-            alert('Owner Registration Successfull');
-            this.dialog.close(true);
-          },
-          error: (err: any) => {
-            alert(err)
-          }
-        })
+      this.http.registerOwner(this.registration.value).subscribe({
+        next: (val:any) => {
+          alert('Owner Registration Successfull');
+          this.dialog.close(true);
+
+        },
+        error: (err:any)=>{
+          alert("some error occurred")
+        }
+      })
       }
     }
   }

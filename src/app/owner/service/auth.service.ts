@@ -44,7 +44,7 @@ export class AuthService {
     return this.http.put(`http://localhost:3000/hotelDetails/${id}`, data)
   }
 
-  updateOwner(id:number, data:any):Observable<any>{
+  updateOwner(id:number, data:any): Observable<any> {
     return this.http.put(`http://localhost:3000/owners/${id}`, data)
   }
 }
