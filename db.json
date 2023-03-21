@@ -1,18 +1,6 @@
 {
   "admin": [
     {
-      "fname": "Shrushti",
-      "lname": "Bagekar",
-      "phone": "7798824481",
-      "email": "bagekarshrushti@gmail.com",
-      "id": 2,
-      "username": "shrushti053",
-      "gender": "male",
-      "DOB": "13-12-2000",
-      "password": "Shrushti@123",
-      "cpassword": "Shrushti@123"
-    },
-    {
       "fname": "rushikesh",
       "lname": "Kshirsagar",
       "phone": "7798824551",
