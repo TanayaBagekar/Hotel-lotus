@@ -50,8 +50,9 @@ export class LoginComponent {
 
   submit() {
     if (this.hotelDetails) {
+      console.log(this.hotelDetails)
       this.hotelDetails.forEach((element: any) => {
-        if (this.loginForm.value.username = element.username) {
+        if(this.loginForm.value.username === element.username) {
           this.hotelListByOwner.push(element);
         }
         this.http.getHotelList = this.hotelListByOwner;
