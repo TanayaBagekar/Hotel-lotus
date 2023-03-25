@@ -1,6 +1,6 @@
 
-import { Component, Inject, OnInit, ViewChild } from '@angular/core';
-import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Component, ViewChild } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
@@ -12,7 +12,7 @@ import { AuthService } from './service/auth.service';
   templateUrl: './owner.component.html',
   styleUrls: ['./owner.component.scss']
 })
-export class OwnerComponent implements OnInit {
+export class OwnerComponent {
   displayedColumns: string[] = [
     'id',
     'oname',
@@ -34,7 +34,6 @@ export class OwnerComponent implements OnInit {
   constructor(
     private dialog: MatDialog,
     private service: AuthService,
-    // @Inject(MAT_DIALOG_DATA) public data: any,
   ) { }
 
   ngOnInit(): void {

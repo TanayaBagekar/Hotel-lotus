@@ -27,11 +27,10 @@
                 <input type="password" name="password" placeholder="Enter Hotel password" formControlName="password">
                 <input type="text" name="cpassword" placeholder="Enter confirm password" formControlName="cpassword">
             </div>
-            <div class="row">
-                <button color="warn" mat-raised-button [matDialogClose]="true">Close</button>
-                <button color="accent" mat-raised-button>{{data? 'Update':'Save'}}</button>
+            <div mat-dialog-actions class="action">
+                <button color="accent" type="submit" mat-raised-button>{{data? 'Update':'Save'}}</button>
+                <button color="warn" mat-raised-button matDialogClose>Close</button>
             </div>
-
         </form>
     </div>
 </div>
