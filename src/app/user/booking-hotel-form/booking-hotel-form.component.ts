@@ -23,12 +23,12 @@ export class BookingHotelFormComponent {
 
   })
 
-   errorMsg(){
-    if( this.email.hasError('required') ){
-      return 'Enter the data';
-    }
-    return this.email.hasError('email')? 'invalid email ':'';
-   }
+  // errorMsg(){
+   // if( this.email.hasError('required') ){
+     // return 'Enter the data';
+  //  }
+   // return this.email.hasError('email')? 'invalid email ':'';
+  // }
 
 
 

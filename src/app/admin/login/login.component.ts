@@ -14,9 +14,7 @@ export class LoginComponent {
 
 
   adminLogin(item:any){
-    console.log(item)
-    console.log(item.username)
-    console.log(item.pass)
+   
     if(item.username === "Tanaya"){
       if(item.pass === "Tanaya@123"){
         this.route.navigate(['admin']) 

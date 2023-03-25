@@ -47,6 +47,18 @@
       "DOB": "11-09-2000",
       "password": "sangita@123",
       "cpassword": "sangita@123"
+    },
+    {
+      "fname": "Shree",
+      "lname": "Bagekar",
+      "phone": "7798824481",
+      "email": "ShreeBagekar@123",
+      "id": "2",
+      "username": "shree@",
+      "gender": "male",
+      "DOB": "9-8-1998",
+      "password": "shree",
+      "cpassword": "shree"
     }
   ],
   "owners": [

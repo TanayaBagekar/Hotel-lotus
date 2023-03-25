@@ -12,7 +12,7 @@
         </div>
         
         <div class="row">
-            <input type="text" placeholder="Enter Your Email-Id" formControlName="email">{{errorMsg}}
+            <input type="text" placeholder="Enter Your Email-Id" formControlName="email">
             
             <input type="text" placeholder="Enter Your Phone Number" formControlName="phone">
         </div>
@@ -25,9 +25,9 @@
         <div class="row">
             <input type="text" placeholder="Booking Amount"formControlName="amount">
             Transaction:
-            <input type="radio" id="UPI" formControlName="transaction">UPI
-            <input type="radio" id="card"  formControlName="transaction">card
-            <input type="radio" id="Bank"  formControlName="transaction">Bank
+            <input type="radio" id="UPI" value="transaction" name="UPI" formControlName="transaction">UPI
+            <input type="radio" id="card"  value="transaction" name="UPI"formControlName="transaction">card
+            <input type="radio" id="Bank"  value="transaction" name="UPI" formControlName="transaction">Bank
         </div>
         <Div class="row">
             <input type="submit" value="Book" routerLink="/user/end">
