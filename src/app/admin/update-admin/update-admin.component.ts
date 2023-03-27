@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { AuthService } from '../service/auth.service'
 
@@ -21,15 +21,15 @@ export class UpdateAdminComponent implements OnInit {
 
   ) {
     this.AdminForm = this.builder.group({
-      fname: '',
-      lname: '',
-      phone: '',
-      email: '',
+      fname:['',[Validators.required]],
+      lname: ['',[Validators.required]],
+      phone: ['',[Validators.required]],
+      email: ['',[Validators.required,Validators.email]],
       id: '',
-      username: '',
+      username: ['',[Validators.required]],
       gender: '',
       DOB: '',
-      password: '',
+      password: ['',[Validators.required, Validators.pattern]],
       cpassword: ''
     })
   }

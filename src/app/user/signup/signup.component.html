@@ -8,10 +8,13 @@
             First Name : 
             <input type="text"  placeholder="First Name" formControlName="fname" required>
             <span class="validation" *ngIf="!userSignupForm.get('fname')?.touched">Enter Your First Name</span>
+            <span class="validation" *ngIf="userSignupForm.get('fname')?.touched && userSignupForm.get('fname')?.errors?.['required']">Name is required</span>
             
             Last Name : 
             <input type="text"   placeholder="Last Name" formControlName="lname">
             <span class="validation" *ngIf="!userSignupForm.get('lname')?.touched">Enter Your First Name</span>
+            <span class="validation" *ngIf="userSignupForm.get('lname')?.touched && userSignupForm.get('lname')?.errors?.['required']">Name is required</span>
+            
           
         </div>
        
@@ -28,13 +31,13 @@
             <input type="text"  placeholder="Phone Number"  pattern="[7-9]{1}[0-9]{9}" maxlength="10" minlength="10" formControlName="phone">
             
             Email : 
-            <input type="text" placeholder="Email "  formControlName="email" pattern="[A-aZ-z]{8}[@]{1}" maxlength="20" >
-         
+            <input type="text" placeholder="Email "  formControlName="email" email maxlength="20" >
+            <span class="validation" *ngIf="userSignupForm.get('email')?.errors?.['email']">Enter Valid Email</span>
         </div>
        
         
         <div class="row">
-            Username : 
+            Username :  
             <input type="text"  placeholder="Username" formControlName="username">
             Password : 
             <input type="password"  placeholder="Password" formControlName="password">
