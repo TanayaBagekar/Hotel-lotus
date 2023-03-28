@@ -11,7 +11,7 @@
             <span class="validation" *ngIf="userSignupForm.get('fname')?.touched && userSignupForm.get('fname')?.errors?.['required']">Name is required</span>
             
             Last Name : 
-            <input type="text"   placeholder="Last Name" formControlName="lname">
+            <input type="text"   placeholder="Last Name" formControlName="lname" required>
             <span class="validation" *ngIf="!userSignupForm.get('lname')?.touched">Enter Your First Name</span>
             <span class="validation" *ngIf="userSignupForm.get('lname')?.touched && userSignupForm.get('lname')?.errors?.['required']">Name is required</span>
             
@@ -20,36 +20,36 @@
        
         <div  class="row">
             Gender:
-            <input type="radio"  id="male" formControlName="gender">Male
-            <input type="radio"  id="female" formControlName="gender">Female
+            <input type="radio"  id="male" formControlName="gender" value="male" required>Male
+            <input type="radio"  id="female" formControlName="gender" value="female" required>Female
             Date Of Birth:
-            <input type="date" name="date" id="date" formControlName="DOB">
+            <input type="date" name="date" id="date" formControlName="DOB" required>
         </div>
        
         <div class="row">
             Mo Number : 
-            <input type="text"  placeholder="Phone Number"  pattern="[7-9]{1}[0-9]{9}" maxlength="10" minlength="10" formControlName="phone">
-            
+            <input type="text"  placeholder="Phone Number"  pattern="[7-9]{1}[0-9]{9}" maxlength="10"  formControlName="phone" required>
+            <span class="validation" *ngIf="!userSignupForm.get('phone')?.errors?.['isValid'] && userSignupForm.get('phone')?.errors?.['maxlenght']">At least 10 Digits</span>
             Email : 
-            <input type="text" placeholder="Email "  formControlName="email" email maxlength="20" >
+            <input type="text" placeholder="Email "  formControlName="email" email required >
             <span class="validation" *ngIf="userSignupForm.get('email')?.errors?.['email']">Enter Valid Email</span>
         </div>
        
         
         <div class="row">
             Username :  
-            <input type="text"  placeholder="Username" formControlName="username">
+            <input type="text"  placeholder="Username" formControlName="username" required>
             Password : 
-            <input type="password"  placeholder="Password" formControlName="password">
+            <input type="password"  placeholder="Password" formControlName="password" required>
             
         </div>
         
         <div class="row">
             Confirm Password : 
-            <input type="text"  placeholder="Confirm Password" formControlName="cpassword">
+            <input type="text"  placeholder="Confirm Password" formControlName="cpassword" required>
         </div>
         <div class="row" >
-            <input type="submit" value="submit" routerLink="/user/home">
+            <button value="submit" [disabled]="!userSignupForm.valid"  routerLink="/user/home">Submit</button>
             <input type="reset" value="Reset">
         </div>
     </form>

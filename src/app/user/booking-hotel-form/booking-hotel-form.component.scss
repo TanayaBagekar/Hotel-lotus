@@ -1,6 +1,6 @@
 .container{
     height: 70vh;
-    width: 40vw;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -68,4 +68,7 @@ input[type=reset]
 }
 input[type=reset]:hover{
     opacity: 0.5;
+}
+.error{
+    color: red;
 }

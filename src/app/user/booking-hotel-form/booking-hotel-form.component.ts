@@ -30,6 +30,8 @@ export class BookingHotelFormComponent {
    // return this.email.hasError('email')? 'invalid email ':'';
   // }
 
+ 
+
 
 
    hotelData(value:any){

@@ -13,6 +13,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { SignupComponent } from './signup/signup.component';
 
 
 
@@ -21,7 +22,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   declarations: [
     AdminComponent,
     LoginComponent,
-    UpdateAdminComponent
+    UpdateAdminComponent,
+    SignupComponent
 
   ],
   imports: [

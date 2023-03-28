@@ -7,30 +7,38 @@
     </div>
     <form [formGroup]="registerForm" (ngsubmit)="hotelData(registerForm.value)">
         <div class="row">
-            <input type="text" placeholder="Enter Full Name" formControlName="fname">
+            <input type="text" placeholder="Enter Full Name" formControlName="fname" required>
+            <span class="error" *ngIf="!registerForm.get('fname')?.touched">please Enter Name</span>
+            <span class="error" *ngIf="registerForm.get('fname')?.touched && registerForm.get('fname')?.errors?.['required']">Name is Required</span>
             <input type="text" placeholder="Enter Your Username"formControlName="username">
+            <span class="error" *ngIf="!registerForm.get('username')?.touched">please Enter Username</span>
+            <span class="error" *ngIf="registerForm.get('username')?.touched && registerForm.get('username')?.errors?.['required']">Username is Required</span>
+
         </div>
         
         <div class="row">
-            <input type="text" placeholder="Enter Your Email-Id" formControlName="email">
-            
-            <input type="text" placeholder="Enter Your Phone Number" formControlName="phone">
+            <input type="text" placeholder="Enter Your Email-Id" formControlName="email" email required>
+            <span class="error" *ngIf="registerForm.get('email')?.touched && registerForm.get('email')?.errors?.['email']">Enter Valid Email</span>
+            <span class="error" *ngIf="registerForm.get('email')?.touched && registerForm.get('email')?.errors?.['required']" >Email is Required</span>
+            <input type="text" placeholder="Enter Your Phone Number" formControlName="phone" maxlength="10" minlength="10" required>
+            <span class="error" *ngIf="registerForm.get('phone')?.touched && registerForm.get('phone')?.errors?.['required']">Phone is required</span>
         </div>
        
         <div class="row">
-            <input type="text" placeholder="Booking Date"formControlName="bdate">
-            <input type="text" placeholder="Outing Date"formControlName="odate">
+            <input type="date" placeholder="Booking Date"formControlName="bdate" required>
+            <span class="error" *ngIf="registerForm.get('bdate')?.touched && registerForm.get('bdate')?.errors?.['required']">Date is Required</span>
+            <input type="date" placeholder="Outing Date"formControlName="odate" required>
+            <span class="error" *ngIf="registerForm.get('odate')?.touched && registerForm.get('odate')?.errors?.['required']">Date is Required</span>
         </div>
-        
         <div class="row">
-            <input type="text" placeholder="Booking Amount"formControlName="amount">
+            <input type="text" placeholder="Booking Amount"formControlName="amount" required>
             Transaction:
-            <input type="radio" id="UPI" value="transaction" name="UPI" formControlName="transaction">UPI
-            <input type="radio" id="card"  value="transaction" name="UPI"formControlName="transaction">card
-            <input type="radio" id="Bank"  value="transaction" name="UPI" formControlName="transaction">Bank
+            <input type="radio" id="UPI" value="upi"  formControlName="transaction" required >UPI
+            <input type="radio" id="card"  value="card" formControlName="transaction" required>card
+            <input type="radio" id="Bank"  value="bank"  formControlName="transaction" required>Bank
         </div>
         <Div class="row">
-            <input type="submit" value="Book" routerLink="/user/end">
+            <input type="submit" [disabled]="registerForm.invalid" value="Book" routerLink="/user/end">
             <input type="reset" value="reset">
         </Div>
     </form>

@@ -1,6 +1,6 @@
 <div class="container">
     <div class="header"> 
-        <h1 style="margin: 10px;">Owner's SignUp Form</h1>
+        <h1 style="margin: 10px;">Admin's SignUp Form</h1>
     <p>Create your account for free !!</p>
     </div>
     <form [formGroup]="signupForm" (ngSubmit)="getValue(signupForm.value)">
@@ -59,8 +59,9 @@
             
         </div>
         <div class="row" >
-            <input type="submit" value="submit" [disabled]="signupForm.invalid" routerLink="/owner/home">
+            <input type="submit" value="submit" [disabled]="signupForm.invalid" routerLink="/admin">
             <input type="reset" value="Reset">
         </div>
     </form>
 </div>
+
