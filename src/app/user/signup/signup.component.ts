@@ -12,7 +12,7 @@ export class SignupComponent {
     lname: new FormControl('',[Validators.required]),
     gender: new FormControl('',[Validators.required]),
     DOB: new FormControl('',[Validators.required]),
-    phone: new FormControl('',[Validators.required, Validators.maxLength(10),Validators.minLength(10)]),
+    phone: new FormControl('',[Validators.required, Validators.maxLength(10),Validators.minLength(10),Validators.pattern('[0-9]{10}')]),
     email: new FormControl('',[Validators.required, Validators.email]),
     username: new FormControl('',[Validators.required]),
     password: new FormControl('',[Validators.required]),

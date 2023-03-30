@@ -25,8 +25,10 @@
         </div>
        
         <div class="row">
+            Booking Date:
             <input type="date" placeholder="Booking Date"formControlName="bdate" required>
             <span class="error" *ngIf="registerForm.get('bdate')?.touched && registerForm.get('bdate')?.errors?.['required']">Date is Required</span>
+            OutingDate:
             <input type="date" placeholder="Outing Date"formControlName="odate" required>
             <span class="error" *ngIf="registerForm.get('odate')?.touched && registerForm.get('odate')?.errors?.['required']">Date is Required</span>
         </div>

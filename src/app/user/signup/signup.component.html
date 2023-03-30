@@ -30,6 +30,8 @@
             Mo Number : 
             <input type="text"  placeholder="Phone Number"  pattern="[7-9]{1}[0-9]{9}" maxlength="10"  formControlName="phone" required>
             <span class="validation" *ngIf="!userSignupForm.get('phone')?.errors?.['isValid'] && userSignupForm.get('phone')?.errors?.['maxlenght']">At least 10 Digits</span>
+            <span class="validation" *ngIf="!userSignupForm.get('phone')?.errors?.['isValid'] && userSignupForm.get('phone')?.errors?.['pattern']">Enter valid pattern</span>
+            
             Email : 
             <input type="text" placeholder="Email "  formControlName="email" email required >
             <span class="validation" *ngIf="userSignupForm.get('email')?.errors?.['email']">Enter Valid Email</span>
