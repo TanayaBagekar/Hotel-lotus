@@ -133,6 +133,18 @@
       "DOB": "09-04-2003",
       "password": "Ajey@123",
       "cpassword": "Ajey@123"
+    },
+    {
+      "id": "1",
+      "oname": "tanaya",
+      "hname": "the royal",
+      "email": "bagekartanaya30@gmail.com",
+      "username": "tanaya007",
+      "phone": "7499269640",
+      "gender": "female",
+      "DOB": "2023-03-01",
+      "password": "sangita@123",
+      "cpassword": "tanaya@123"
     }
   ],
   "hotelDetails": [
