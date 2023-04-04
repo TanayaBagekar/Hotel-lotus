@@ -1,24 +1,22 @@
-<nav>
-    <div class="logo">Admin Data</div>
-    <ul>
-        <li><button (click)="adminRegister()">Add Admin</button></li>
-    </ul>
-</nav>
 <div class="container">
-        <div class="box" *ngFor="let admin of tanaya">
-            <h1 style="text-align: center; border-bottom: 2px solid grey;">ID : {{admin.id}}</h1>
-            <h1>First Name : {{admin.fname}}</h1>
-            <h1>Last Name : {{admin.lname}}</h1>
-            <h1>Phone : {{admin.phone}}</h1>
-            <h1>Email : {{admin.email}}</h1>
-            <h1>Username : {{admin.username}}</h1>
-            <h1>DOB : {{admin.DOB}}</h1>
-            <h1>Gender : {{admin.gender}}</h1>
-            <h1>Password : {{admin.password}}</h1>
-            <h1>Confirm Password : {{admin.cpassword}}</h1>
-            <div class="batn">
-                <button (click)="openAdminForm(admin)">Edit</button>
-                <button (click)="deleteAdmin(admin.id)">Delete</button>
+    <header>
+        <h1>Owner List</h1>
+        <button class="btn btn-primary" (click)="adminRegister()">ADD OWNER</button>
+    </header>
+    <main>
+        <div class="box" *ngFor="let owner of owners">
+            <p><b>First Name : </b>{{owner.fname}}</p>
+            <p><b>Last Name : </b>{{owner.lname}}</p>
+            <p><b>Phone : </b>{{owner.phone}}</p>
+            <p><b>Email : </b>{{owner.email}}</p>
+            <p><b>Age : </b>{{owner.age}}</p>
+            <p><b>Gender : </b>{{owner.gender}}</p>
+            <p><b>ID : </b>{{owner.id}}</p>
+            <p><b>Password : </b>{{owner.password}}</p>
+            <div>
+                <button class="btn btn-primary" (click)="openAdminForm(owner)">Edit</button>
+                <button class="btn btn-danger mx-3" (click)="deleteAdmin(owner.id)">Delete</button>
             </div>
         </div>
+    </main>
 </div>

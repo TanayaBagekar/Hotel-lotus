@@ -1,77 +1,42 @@
-.container{
-    width: 90vw;
-    height: 80vh;
-    box-sizing: border-box;
-    overflow: auto;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    scrollbar-width: 0px;
-    background-color: white;
-    background-image: url('https://th.bing.com/th/id/R.f8c6c31bb31006e6286d32bb21d68792?rik=Ol2eKXtKRZM%2bOA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fwp1846091.jpg&ehk=0zvX45NpA5d1lEVN2iNpEkNcMjQLUmh4OZi8uKRH%2fwQ%3d&risl=&pid=ImgRaw&r=0');
-    
-        
+.container {
+    height: 100%;
+    width: 1300px;
 }
 
-.box {
-    border: 2px solid black;
-    border-radius: 25px;
-    padding: 20px;
-    width: 400px;
-    margin: 30px;
+header {
+    float: right;
     background-color: white;
-}
-
-.batn{
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10px;
+
+    h1 {
+        position: relative;
+        left: 10px;
+    }
+
     button {
-        flex: 1;
-        height: 40px;
-        border-radius: 12px;
-        margin: 0 10px;
-        background-color: rgb(218, 128, 143);
-        font-size: 20px;
-        color: white;
-    }
-    button:hover{
-        background-color: rgb(99, 85, 204);
+        position: relative;
+        left: 1000px;
     }
 }
 
-nav{
-    box-sizing: border-box;
+main {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    background-color: rgb(228, 112, 112);
-    
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-    .logo{
-        font-size: 28px;
-        color: white;
-        cursor: pointer;
-    }
-
-    ul{
-        li{
-            list-style: none;
-            margin: auto 20px;
-            button{
-                height: 40px;
-                width: 200px;
-                font-size: 20px;
-                border-radius: 20px;
-                cursor: pointer;
-            }
-            button:hover{
-                color: white;
-                background-color: black;
-
-            }
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .box {
+        background-color: white;
+        padding: 20px;
+        margin: 10px;
+        border: 2px solid black;
+        height: 350px;
+        width: 400px;
+        border-radius: 25px;
+        p {
+            font-size: 20px;
         }
     }
 }

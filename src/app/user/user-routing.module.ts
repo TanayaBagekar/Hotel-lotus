@@ -8,10 +8,10 @@ import { UserComponent } from './user.component';
 
 const routes: Routes = [
   { path: 'home', component: UserComponent },
-  { path: 'login', component: LoginComponent},
-  { path: 'signup', component: SignupComponent},
-  {path: 'bookform',component:BookingHotelFormComponent},
-  {path:'end',component:EndingComponent}
+  { path: 'login', component: LoginComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: 'bookform', component: BookingHotelFormComponent },
+  { path: 'end', component: EndingComponent }
 
 ];
 

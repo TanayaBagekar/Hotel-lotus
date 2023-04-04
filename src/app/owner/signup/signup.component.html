@@ -1,66 +1,19 @@
 <div class="container">
-    <div class="header"> 
-        <h1 style="margin: 10px;">Owner's SignUp Form</h1>
-    <p>Create your account for free !!</p>
-    </div>
-    <form [formGroup]="signupForm" (ngSubmit)="getValue(signupForm.value)">
-        <div class="row">
-            First Name : 
-            <input type="text"  placeholder="First Name" formControlName="fname" required>
-            <span class="error" *ngIf="!signupForm.get('fname')?.touched">Please Enter Name</span>
-            <span class="error" *ngIf="signupForm.get('fname')?.touched && signupForm.get('fname')?.errors?.['required']">Name is Required</span>
-            
-            Last Name : 
-            <input type="text"   placeholder="Last Name" formControlName="lname" required>
-            <span class="error" *ngIf="!signupForm.get('lname')?.touched">Please Enter Name</span>
-            <span class="error" *ngIf="signupForm.get('lname')?.touched && signupForm.get('lname')?.errors?.['required']">Name is Required</span>
-           
-          
-        </div>
-       
-        <div  class="row">
-            Gender:
-            <input type="radio"  id="male" formControlName="gender" value="male" required>Male
-            <input type="radio"  id="female" formControlName="gender" value="female" required>Female
-            Date Of Birth:
-            <input type="date" name="date" id="date" formControlName="DOB" required>
-            <span class="error" *ngIf="signupForm.get('DOB')?.touched && signupForm.get('DOB')?.errors?.['required']">DOB is Required </span>
-        </div>
-       
-        <div class="row">
-            Mo Number : 
-            <input type="text"  placeholder="Phone Number"  pattern="[7-9]{1}[0-9]{9}" maxlength="10" minlength="10" formControlName="phone" required>
-            <span class="error" *ngIf="signupForm.get('phone')?.touched && signupForm.get('phone')?.errors?.['required']">Number is Required</span>
-            Email : 
-            <input type="text" placeholder="Email " email  formControlName="email" maxlength="20" >
-            <span class="error" *ngIf="signupForm.get('email')?.touched && signupForm.get('email')?.errors?.['required']">Email is required</span>
-            <span class="error" *ngIf="signupForm.get('email')?.touched && signupForm.get('email')?.errors?.['email']">Enter Valid Email</span>
-           
-        </div>
-       
-        
-        <div class="row">
-            Username : 
-            <input type="text"  placeholder="Username" formControlName="username" required>
-            <span class="error" *ngIf="!signupForm.get('username')?.touched">Please Enter Name</span>
-            <span class="error" *ngIf="signupForm.get('username')?.touched && signupForm.get('username')?.errors?.['required']">Username is Required</span>
-           
-
-            Password : 
-            <input type="password"  placeholder="Password" formControlName="password" required>
-            <span class="error" *ngIf="signupForm.get('password')?.touched && signupForm.get('password')?.errors?.['required']">Password is Required</span>
-            
-        </div>
-        
-        <div class="row">
-            Confirm Password : 
-            <input type="text"  placeholder="Confirm Password" formControlName="cpassword" required>
-            <span class="error" *ngIf="signupForm.get('cpassword')?.touched && signupForm.get('cpassword')?.errors?.['required']">Password is Required</span>
-            
-        </div>
-        <div class="row" >
-            <input type="submit" value="submit" [disabled]="signupForm.invalid" routerLink="/owner/home">
-            <input type="reset" value="Reset">
-        </div>
+    <h1>Owner Registration Form</h1>
+    <form class="form-group" [formGroup]="signupForm" (ngSubmit)="getValue()">
+        <input type="text" formControlName="fname" class="form-control" name="fname" placeholder="First Name">
+        <input type="text" formControlName="lname" class="form-control" name="lname" placeholder="Last Name">
+        <input type="text" formControlName="phone" class="form-control" name="phone" placeholder="phone">
+        <input type="text" formControlName="age" class="form-control" name="age" placeholder="Age">
+        <select class="form-select" formControlName="gender">
+            <option value="male" selected>Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <input type="email" formControlName="email" class="form-control" name="email" placeholder="email">
+        <input type="text" formControlName="id" class="form-control" name="id" placeholder="username">
+        <input type="password" formControlName="password" class="form-control" name="password" placeholder="Password">
+        <input type="submit" class="btn btn-success" value="Submit">
+        <span><a routerLink="/owner/login">Already have an account?</a></span>
     </form>
 </div>

@@ -15,6 +15,10 @@ export class AuthService {
     return this.http.get(this.url)
   }
 
+  getAdminListbyId(id:any){
+    return this.http.get(`http://localhost:3000/admin/${id}`)
+  }
+
   getAdminPost(data:any){
     return this.http.post(this.url, data)
   }

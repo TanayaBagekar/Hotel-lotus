@@ -9,20 +9,25 @@ import { AuthService } from '../service/auth.service';
 })
 export class LoginComponent {
 
-  constructor(private route:Router, private http: AuthService){
-}
+  constructor(
+    private service: AuthService,
+    private router: Router
+  ) { }
 
+  password: any;
 
-  adminLogin(item:any){
-   
-    if(item.username === "Tanaya"){
-      if(item.pass === "Tanaya@123"){
-        this.route.navigate(['admin']) 
+  adminLogin(data: any) {
+    console.log(data)
+    this.service.getAdminListbyId(data.username).subscribe((res) => {
+      console.log(res)
+      this.password = res
+      if(this.password.password === data.pass){
+        this.router.navigateByUrl('/admin')
+        alert("admin login successfull")
       }else{
-        alert("Wrong PassWord !!")
+        this.router.navigateByUrl('/')
+        alert("please check the password")
       }
-    }else {
-      location.href = 'http://localhost:4200/pagenotFound'
-    }
+    })
   }
 }

@@ -1,14 +1,14 @@
-<div class="conatainer">
-    <div class="box" *ngFor="let hotel of hotels">
-        <h1>{{hotel.id}}</h1>
-        <hr>
-        <p><b> name : </b>{{hotel.name}}</p>
-        <p><b>hotel email : </b>{{hotel.email}}</p>
-        <p><b> contact:</b> {{hotel.phone}}</p>
-        <p><b> special dish:</b> {{hotel.menu}}</p>
-        <p><b> area :</b> {{hotel.address}}</p>
-        <p><b> rooms :</b> {{hotel.arooms}}</p>
-        <p><b> workers :</b> {{hotel.workers}}</p>
-        <button mat-raised-button color="accent" routerLink="/user/bookform">Book Hotel</button>
-    </div>
+<div class="container">
+    <div class="card" *ngFor="let item of hotels">
+        <img src="https://source.unsplash.com/1600x900/?{{item.name}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-title"><b>Hotel Name : </b>{{item.name}}</p>
+          <p class="card-text"><b>Hotel Menu : </b>{{item.menu}}</p>
+          <p class="card-text"><b>Hotel Phone : </b>{{item.phone}}</p>
+          <p class="card-text"><b>Hotel Email : </b>{{item.email}}</p>
+          <p class="card-text"><b>Hotel Available Rooms : </b>{{item.arooms}}</p>
+          <p class="card-text"><b>Hotel Address : </b>{{item.address}}</p>
+          <a routerLink="/user/bookform" class="btn btn-primary">Book Hotel</a>
+        </div>
+      </div>
 </div>

@@ -1,47 +1,19 @@
-
 <div class="container">
-    <div class="header">
-        <h1>
-            Booking Hotel Form
-        </h1>
-    </div>
-    <form [formGroup]="registerForm" (ngsubmit)="hotelData(registerForm.value)">
-        <div class="row">
-            <input type="text" placeholder="Enter Full Name" formControlName="fname" required>
-            <span class="error" *ngIf="!registerForm.get('fname')?.touched">please Enter Name</span>
-            <span class="error" *ngIf="registerForm.get('fname')?.touched && registerForm.get('fname')?.errors?.['required']">Name is Required</span>
-            <input type="text" placeholder="Enter Your Username"formControlName="username">
-            <span class="error" *ngIf="!registerForm.get('username')?.touched">please Enter Username</span>
-            <span class="error" *ngIf="registerForm.get('username')?.touched && registerForm.get('username')?.errors?.['required']">Username is Required</span>
-
-        </div>
-        
-        <div class="row">
-            <input type="text" placeholder="Enter Your Email-Id" formControlName="email" email required>
-            <span class="error" *ngIf="registerForm.get('email')?.touched && registerForm.get('email')?.errors?.['email']">Enter Valid Email</span>
-            <span class="error" *ngIf="registerForm.get('email')?.touched && registerForm.get('email')?.errors?.['required']" >Email is Required</span>
-            <input type="text" placeholder="Enter Your Phone Number" formControlName="phone" maxlength="10" minlength="10" required>
-            <span class="error" *ngIf="registerForm.get('phone')?.touched && registerForm.get('phone')?.errors?.['required']">Phone is required</span>
-        </div>
-       
-        <div class="row">
-            Booking Date:
-            <input type="date" placeholder="Booking Date"formControlName="bdate" required>
-            <span class="error" *ngIf="registerForm.get('bdate')?.touched && registerForm.get('bdate')?.errors?.['required']">Date is Required</span>
-            OutingDate:
-            <input type="date" placeholder="Outing Date"formControlName="odate" required>
-            <span class="error" *ngIf="registerForm.get('odate')?.touched && registerForm.get('odate')?.errors?.['required']">Date is Required</span>
-        </div>
-        <div class="row">
-            <input type="text" placeholder="Booking Amount"formControlName="amount" required>
-            Transaction:
-            <input type="radio" id="UPI" value="upi"  formControlName="transaction" required >UPI
-            <input type="radio" id="card"  value="card" formControlName="transaction" required>card
-            <input type="radio" id="Bank"  value="bank"  formControlName="transaction" required>Bank
-        </div>
-        <Div class="row">
-            <input type="submit" [disabled]="registerForm.invalid" value="Book" routerLink="/user/end">
-            <input type="reset" value="reset">
-        </Div>
+    <h1>Hotel Booking Form</h1>
+    <form class="form-group" [formGroup]="registerForm" (ngSubmit)="hotelData()">
+        <input type="text" formControlName="name" class="form-control" name="name" placeholder="Name">
+        <input type="text" formControlName="phone" class="form-control" name="phone" placeholder="phone">
+        <input type="email" formControlName="email" class="form-control" name="email" placeholder="email">
+        <input type="text" formControlName="age" class="form-control" name="age" placeholder="Age">
+        <input type="date" id="date" formControlName="bdate">
+        <input type="date" id="date" formControlName="odate">
+        <select class="form-select" formControlName="payment">
+            <option value="upi">UPI</option>
+            <option value="qr">QR</option>
+            <option value="net-banking">Net Banking</option>
+        </select>
+        <input type="text" formControlName="amount" class="form-control" name="amount" placeholder="Amount">
+        <input type="submit"  class="btn btn-success" value="Submit">
+        <span><a routerLink="/user/end">Cancel ??</a></span>
     </form>
 </div>

@@ -24,13 +24,11 @@ export class UpdateAdminComponent implements OnInit {
       fname:['',[Validators.required]],
       lname: ['',[Validators.required]],
       phone: ['',[Validators.required]],
+      age: ['', Validators.required],
+      gender: ['',[Validators.required]],
       email: ['',[Validators.required,Validators.email]],
-      id: '',
-      username: ['',[Validators.required]],
-      gender: '',
-      DOB: '',
+      id: ['',[Validators.required]],
       password: ['',[Validators.required, Validators.pattern]],
-      cpassword: ''
     })
   }
 

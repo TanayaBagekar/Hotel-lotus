@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup,Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { AuthService } from '../service/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -7,29 +9,32 @@ import { FormControl, FormGroup,Validators } from '@angular/forms';
   styleUrls: ['./signup.component.scss']
 })
 export class SignupComponent {
- 
-  
 
-  signupForm =new FormGroup({
-    fname: new FormControl('',[Validators.required]),
-    lname: new FormControl('',[Validators.required]),
-    gender: new FormControl('',[Validators.required]),
-    DOB: new FormControl('',[Validators.required]),
-    phone: new FormControl('',[Validators.required]),
-    email: new FormControl('',[Validators.required, Validators.email]),
-    username: new FormControl('',[Validators.required]),
-    password: new FormControl('',[Validators.required]),
-    cpassword: new FormControl('',[Validators.required]),
+  constructor(private service: AuthService,
+    private router: Router) { }
 
+  signupForm = new FormGroup({
+    fname: new FormControl('', [Validators.required, Validators.minLength(3)]),
+    lname: new FormControl('', [Validators.required, Validators.minLength(3)]),
+    gender: new FormControl('', [Validators.required]),
+    age: new FormControl('', [Validators.required, Validators.min(18), Validators.max(60)]),
+    phone: new FormControl('', [Validators.required, Validators.minLength(10), Validators.maxLength(12)]),
+    email: new FormControl('', [Validators.required, Validators.email]),
+    id: new FormControl('', [Validators.required, Validators.minLength(7), Validators.maxLength(20)]),
+    password: new FormControl('', [Validators.required]),
   })
 
-  getValue(data:any){
-    console.log(data.value);
-    
-      
-     
+  getValue() {
+    if (this.signupForm.valid) {
+      if (this.signupForm.value) {
+        this.service.getAdminPost(this.signupForm.value).subscribe((res) => {
+          console.log(res)
+          alert("Admin Registered Successfully !!")
+          this.router.navigateByUrl('/admin/login')
+        })
+      }else{
+        alert("Please Enter Valid Data")
+      }
+    }
   }
-  
-
-
 }

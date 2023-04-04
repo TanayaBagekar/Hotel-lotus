@@ -24,7 +24,7 @@ export class AdminComponent {
     'action'
   ];
 
-  tanaya:any;
+  owners:any;
 
   constructor(
     private dialog : MatDialog,
@@ -47,7 +47,7 @@ export class AdminComponent {
   getAdminList() {
     this.service.getAdminList().subscribe((data)=>{
       console.log(data)
-      this.tanaya = data
+      this.owners = data
     })
   }
 

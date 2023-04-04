@@ -1,18 +1,17 @@
-.container{
+.container {
     width: 100vw;
     margin: 20px auto;
     border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-   // background-image: url("https://images2.alphacoders.com/471/thumb-1920-471257.jpg");
-   // background-repeat: no-repeat;
-   // background-size: cover;
-
 }
-.image{
-background-image: url('https://th.bing.com/th/id/R.f8c6c31bb31006e6286d32bb21d68792?rik=Ol2eKXtKRZM%2bOA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fwp1846091.jpg&ehk=0zvX45NpA5d1lEVN2iNpEkNcMjQLUmh4OZi8uKRH%2fwQ%3d&risl=&pid=ImgRaw&r=0');
-background-repeat: no-repeat;
-background-size: cover;
-height: 100%;
+
+.image {
+    background-image: url('https://th.bing.com/th/id/R.f8c6c31bb31006e6286d32bb21d68792?rik=Ol2eKXtKRZM%2bOA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fwp1846091.jpg&ehk=0zvX45NpA5d1lEVN2iNpEkNcMjQLUmh4OZi8uKRH%2fwQ%3d&risl=&pid=ImgRaw&r=0');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: unset;
+    height: 100%;
 }

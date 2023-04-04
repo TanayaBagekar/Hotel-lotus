@@ -1,34 +1,38 @@
-h1{
-    width: 100%;
-    text-align: center;
-}
-
-.content{
+.container {
+    background-color: white;
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    input{
-        height: 40px;
-        width: 350px;
-        border-radius: 12px;
-        padding: 12px;
-        margin: 20px 10px;
-        font-size: 18px;
-    }
-}
 
-.action{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    button{
-        flex: 1;
-        margin: 20px;
-        height: 40px;
+    h1 {
+        text-align: center;
     }
-}
-.error{
-    color: red;
-    border-bottom: red;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input {
+            margin: 10px;
+            height: 50px;
+            width: 400px;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        select {
+            height: 50px;
+            width: 400px;
+        }
+
+        input[type=radio] {
+            width: 30px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 16px;
+    }
 }

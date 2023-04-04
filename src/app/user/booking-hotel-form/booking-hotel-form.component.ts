@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { FormGroup,FormControl,Validator, Validators } from "@angular/forms";
+import { FormGroup, FormControl, Validator, Validators } from "@angular/forms";
+import { Router } from '@angular/router';
+import { AuthService } from '../service/auth.service';
 
 @Component({
   selector: 'app-booking-hotel-form',
@@ -8,35 +10,29 @@ import { FormGroup,FormControl,Validator, Validators } from "@angular/forms";
 })
 export class BookingHotelFormComponent {
 
-  email:any;
+  constructor(
+    private router : Router,
+    private service : AuthService
+  ){}
 
-  registerForm=new FormGroup({
-    fname: new FormControl('',[Validators.required]),
-    username: new FormControl('',[Validators.required]),
-    email:new FormControl('',[Validators.required, Validators.email]),
-    phone:new FormControl('',[Validators.required]),
-    bdate:new FormControl('',[Validators.required]),
-    odate:new FormControl ('',Validators.required),
-    amount:new FormControl('',Validators.required),
-    transaction: new FormControl('upi',[Validators.required]),
+  email: any;
 
-
+  registerForm = new FormGroup({
+    name: new FormControl('', [Validators.required]),
+    phone: new FormControl('', [Validators.required]),
+    email: new FormControl('', [Validators.required, Validators.email]),
+    age: new FormControl('', [Validators.required]),
+    bdate: new FormControl('', [Validators.required]),
+    odate: new FormControl('', Validators.required),
+    amount: new FormControl('', Validators.required),
+    payment: new FormControl('upi', [Validators.required]),
   })
 
-  // errorMsg(){
-   // if( this.email.hasError('required') ){
-     // return 'Enter the data';
-  //  }
-   // return this.email.hasError('email')? 'invalid email ':'';
-  // }
-
- 
-
-
-
-   hotelData(value:any){
-    console.log(value);
-    
-    
-   }
+  hotelData() {
+    console.log(this.registerForm.value)
+    this.service.postBookingForm(this.registerForm.value).subscribe((res)=>{
+      console.log(res)
+      this.router.navigateByUrl('/user/end')
+    })
+  }
 }

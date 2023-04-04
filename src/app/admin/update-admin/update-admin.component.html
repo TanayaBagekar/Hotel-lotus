@@ -1,41 +1,18 @@
-<div>
-    <h1>Admin's Registration Form</h1>
+<div class="container">
+    <h1>Owner Registration Form</h1>
+    <form class="form-group" [formGroup]="AdminForm" (ngSubmit)="AdminRegistr()">
+        <input type="text" formControlName="fname" class="form-control" name="fname" placeholder="First Name">
+        <input type="text" formControlName="lname" class="form-control" name="lname" placeholder="Last Name">
+        <input type="text" formControlName="phone" class="form-control" name="phone" placeholder="phone">
+        <input type="text" formControlName="age" class="form-control" name="age" placeholder="Age">
+        <select class="form-select" formControlName="gender">
+            <option value="male" selected>Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <input type="email" formControlName="email" class="form-control" name="email" placeholder="email">
+        <input type="text" formControlName="id" class="form-control" name="id" placeholder="username">
+        <input type="password" formControlName="password" class="form-control" name="password" placeholder="Password">
+        <input type="submit" class="btn btn-success" value="{{data?'Update':'Save'}}">
+    </form>
 </div>
-<form [formGroup]="AdminForm" (ngSubmit)="AdminRegistr()">
-    <div class="content">
-        <div>
-            <input type="text" formControlName="fname" placeholder="Enter first name" required>
-            <span class="error" *ngIf="!AdminForm.get('fname')?.touched ">Please Enter Name</span>
-            <span class="error" *ngIf="AdminForm.get('fname')?.touched && AdminForm.get('fname')?.errors?.['required']">Name is required</span>
-
-            <input type="text" formControlName="lname" placeholder="Enter Last name">
-            <span class="error" *ngIf="!AdminForm.get('lname')?.touched">Please Enter Name</span>
-            <span class="error" *ngIf="AdminForm.get('lname')?.touched && AdminForm.get('lname')?.errors?.['required']">Name is required</span>
-        </div>
-        <div>
-            <input type="text" formControlName="id" placeholder="Enter id" >
-            <input type="text" formControlName="username" placeholder="Enter username" required>
-            <span class="error" *ngIf="!AdminForm.get('username')?.touched">Please Enter Username</span>
-            <span class="error" *ngIf="AdminForm.get('username')?.touched && AdminForm.get('username')?.errors?.['required']">Name is required</span>
-        </div>
-        <div>
-            <input type="date" formControlName="DOB" placeholder="Enter DOB">
-            <input type="text" formControlName="email" placeholder="Enter email" email>
-            <span class="error" *ngIf="AdminForm.get('email')?.touched && AdminForm.get('email')?.errors?.['email']">Enter Valid Email</span>
-        </div>
-        <div>
-            <input type="text" formControlName="phone" placeholder="Enter phone">
-            <input type="text" formControlName="gender" placeholder="Enter gender">
-        </div>
-        <div>
-            <input type="password" formControlName="password" placeholder="Enter password" pattern="[a-Az-Z]{5}[0-9]{3}">
-            <span class="error" *ngIf="AdminForm.get('password')?.touched && AdminForm.get('email')?.errors?.['pattern']">Enter Valid Pattern</span>
-            <input type="text" formControlName="cpassword" placeholder="confirm password" pattern="[a-Az-Z]{5}[0-9]{3}">
-            <span class="error" *ngIf="AdminForm.get('password')?.touched && AdminForm.get('email')?.errors?.['pattern']">Enter Valid Pattern</span>
-        </div>
-    </div>
-    <div mat-dialog-actions class="action">
-        <button mat-raised-button type="button" [matDialogClose]="true">Cancel</button>
-        <button  mat-raised-button color="primary">{{data ? 'Update': 'Save'}}</button>
-    </div>
-</form>

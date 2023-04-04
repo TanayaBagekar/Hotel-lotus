@@ -1,16 +1,10 @@
 <form #loginForm='ngForm' autocomplete="off" (ngSubmit)="submit()">
-    <h1>owner's Login Form </h1>
+    <h1>Owner's Login Form </h1>
+    <input type="text" placeholder="Username" name="username" id="username" autocomplete="off">
+    <input type="password" placeholder="Password" name="pass" id="pass" autocomplete="off">
+    <input type="submit" class="btn btn-primary">
     <div>
-        <input placeholder="Enter Username" type="text" ngModel name="username">
-
+        <a routerLink="/">Forgot password?</a>
+        <a routerLink="/owner/signup">Create Owner Account?</a>
     </div>
-    <div>
-        <input type="password" placeholder="Enter Password" ngModel name="pass">
-
-    </div>
-    <div>
-        <button mat-raised-button  routerLink="/owner/home">Login</button>
-        <button mat-raised-button routerLink="/owner/signup">Signup</button>
-    </div>
-    <p>Forgot <a routerLink="/">username</a> / <a routerLink="/">password</a></p>
 </form>

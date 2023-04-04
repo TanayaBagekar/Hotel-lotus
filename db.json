@@ -1,150 +1,56 @@
 {
   "admin": [
     {
-      "fname": "rushikesh",
-      "lname": "Kshirsagar",
-      "phone": "7798824551",
-      "email": "Hrushi@gmail.com",
-      "id": 3,
-      "username": "Hrushi053",
+      "fname": "Ajay",
+      "lname": "Kharat",
+      "phone": "9421322354",
+      "age": "20",
       "gender": "male",
-      "DOB": "05-03-1998",
-      "password": "Hrushi@123",
-      "cpassword": "Hrushi@123"
+      "email": "kharatajay314@gmail.com",
+      "id": "Ajay007",
+      "password": "Ajay@123"
     },
     {
-      "id": 4,
-      "fname": "Ankush",
-      "lname": "Jadhav",
-      "email": "Ankush@gmail.com",
-      "phone": "9798824481",
-      "username": "Ankush053",
-      "gender": "male",
-      "DOB": "31-09-2000",
-      "password": "Ankush@123",
-      "cpassword": "Ankush@123"
-    },
-    {
-      "id": 5,
-      "fname": "Bhagyesh",
-      "lname": "Adhikari",
-      "email": "bhagyesh@gmail.com",
-      "phone": "9998824481",
-      "username": "bhagyesh053",
-      "gender": "male",
-      "DOB": "21-08-2000",
-      "password": "bhagyesh@123",
-      "cpassword": "bhagyesh@123"
-    },
-    {
-      "id": 6,
-      "fname": "Sangita",
-      "lname": "Wankhade",
-      "email": "sabgita@gmail.com",
-      "phone": "8898824481",
-      "username": "Sangita053",
-      "gender": "female",
-      "DOB": "11-09-2000",
-      "password": "sangita@123",
-      "cpassword": "sangita@123"
-    },
-    {
-      "fname": "Shree",
+      "fname": "Tanaya",
       "lname": "Bagekar",
-      "phone": "7798824481",
-      "email": "ShreeBagekar@123",
-      "id": "2",
-      "username": "shree@",
-      "gender": "male",
-      "DOB": "9-8-1998",
-      "password": "shree",
-      "cpassword": "shree"
+      "gender": "female",
+      "age": "22",
+      "phone": "7499269640",
+      "email": "bagekartanaya31@gmail.com",
+      "id": "Tanaya007",
+      "password": "Tanaya@123"
+    },
+    {
+      "fname": "Shruti",
+      "lname": "Bagekar",
+      "phone": "9403782354",
+      "age": "20",
+      "gender": "female",
+      "email": "shruti@gmail.com",
+      "id": "Shruti007",
+      "password": "Shruti@123"
     }
   ],
   "owners": [
     {
-      "id": 2,
-      "oname": "Sangita pungale",
-      "hname": "The-Royal",
-      "email": "sabgita@gmail.com",
-      "username": "Sangita0123",
-      "phone": "8898824481",
-      "gender": "female",
-      "DOB": "2023-03-02",
-      "password": "sangita@123",
-      "cpassword": "sangita@123"
-    },
-    {
-      "id": 3,
-      "oname": "Sangita Wankhade",
-      "hname": "Rajput Hotel",
-      "email": "sabgita@gmail.com",
-      "username": "Sangita053",
-      "phone": "9898824481",
-      "gender": "female",
-      "DOB": "2023-02-27",
-      "password": "sangita@123",
-      "cpassword": "sangita@123"
-    },
-    {
-      "id": 4,
-      "oname": "Rashi Tayalkar",
-      "hname": "Golden-leaf",
-      "email": "Rashi@gmail.com",
-      "username": "rashi053",
-      "phone": "8798824481",
-      "gender": "female",
-      "DOB": "2023-02-26",
-      "password": "sangita@123",
-      "cpassword": "sangita@123"
-    },
-    {
-      "id": 5,
-      "oname": "Tanaya Bagekar",
-      "hname": "Hotel Lotus",
-      "email": "Tanaya@gmail.com",
-      "username": "Tanaya053",
-      "phone": "7898824481",
-      "gender": "female",
-      "DOB": "2023-03-31",
-      "password": "sangita@123",
-      "cpassword": "sangita@123"
-    },
-    {
-      "id": 6,
-      "oname": "Hrushikesh Kshirsagar",
-      "hname": "The-Rangoli-Hotel",
-      "email": "hrushi@gmail.com",
-      "username": "hrushi053",
-      "phone": "7798824481",
+      "fname": "Ajay",
+      "lname": "Kharat",
       "gender": "male",
-      "DOB": "05-03-1998",
-      "password": "tanaya@123",
-      "cpassword": "hrushi@123"
-    },
-    {
-      "id": 7,
-      "oname": "Ajay Kharat",
-      "hname": "The-Grand-Mehfaline-2",
-      "email": "kharatajay023@gmail.com",
-      "username": "Simple_Person_007",
+      "age": "20",
       "phone": "8857822354",
-      "gender": "male",
-      "DOB": "09-04-2003",
-      "password": "Ajey@123",
-      "cpassword": "Ajey@123"
+      "email": "kharatajay314@gmail.com",
+      "id": "Ajay007",
+      "password": "Ajay@123"
     },
     {
-      "id": "1",
-      "oname": "tanaya",
-      "hname": "the royal",
-      "email": "bagekartanaya30@gmail.com",
-      "username": "tanaya007",
-      "phone": "7499269640",
+      "fname": "Tanaya",
+      "lname": "Bagekar",
       "gender": "female",
-      "DOB": "2023-03-01",
-      "password": "sangita@123",
-      "cpassword": "tanaya@123"
+      "age": "22",
+      "phone": "7499269640",
+      "email": "Bagekartanaya31@gmail.com",
+      "id": "Tanaya007",
+      "password": "Tanaya@123"
     }
   ],
   "hotelDetails": [
@@ -201,16 +107,48 @@
   ],
   "user": [
     {
-      "id": 1,
+      "fname": "Ajay",
+      "lname": "Kharat",
+      "gender": "male",
+      "age": "20",
+      "phone": "8857822354",
+      "email": "kharatajay314@gmail.com",
+      "id": "Ajay007",
+      "password": "Ajay@123"
+    },
+    {
       "fname": "Tanaya",
       "lname": "Bagekar",
-      "email": "Tanaya@gmail.com",
-      "phone": "7798824481",
-      "username": "Tanaya053",
       "gender": "female",
-      "DOB": "18-09-1998",
-      "password": "tanaya@123",
-      "cpassword": "tanaya@123"
+      "age": "22",
+      "phone": "7499239640",
+      "email": "bagekartanaya31@gmail.com",
+      "id": "Tanaya007",
+      "password": "Tanaya@123"
+    }
+  ],
+  "hbooking": [
+    {
+      "name": "Ajay Kharat",
+      "phone": "08857822354",
+      "email": "kharatajay314@gmail.com",
+      "age": "20",
+      "bdate": "2023-04-08",
+      "odate": "2023-04-05",
+      "amount": "3333",
+      "payment": "net-banking",
+      "id": 1
+    },
+    {
+      "name": "Tanaya Bagekar",
+      "phone": "7499269640",
+      "email": "tanaya32@gmail.com",
+      "age": "22",
+      "bdate": "2023-04-01",
+      "odate": "2023-04-08",
+      "amount": "3636",
+      "payment": "qr",
+      "id": 2
     }
   ]
 }
