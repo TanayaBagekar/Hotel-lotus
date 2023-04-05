@@ -149,6 +149,19 @@
       "amount": "3636",
       "payment": "qr",
       "id": 2
+    },
+    {
+      "name": "Rohit Kharat",
+      "phone": "9421322354",
+      "email": "rohit@gmail.com",
+      "age": "12",
+      "date": [
+        "2023-04-06T10:18:51.000Z",
+        "2023-05-09T10:18:51.000Z"
+      ],
+      "amount": "3696",
+      "payment": "net-banking",
+      "id": 3
     }
   ]
 }

@@ -22,8 +22,7 @@ export class BookingHotelFormComponent {
     phone: new FormControl('', [Validators.required]),
     email: new FormControl('', [Validators.required, Validators.email]),
     age: new FormControl('', [Validators.required]),
-    bdate: new FormControl('', [Validators.required]),
-    odate: new FormControl('', Validators.required),
+    date: new FormControl('', [Validators.required]),
     amount: new FormControl('', Validators.required),
     payment: new FormControl('upi', [Validators.required]),
   })

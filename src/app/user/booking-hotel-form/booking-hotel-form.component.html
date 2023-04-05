@@ -5,15 +5,14 @@
         <input type="text" formControlName="phone" class="form-control" name="phone" placeholder="phone">
         <input type="email" formControlName="email" class="form-control" name="email" placeholder="email">
         <input type="text" formControlName="age" class="form-control" name="age" placeholder="Age">
-        <input type="date" id="date" formControlName="bdate">
-        <input type="date" id="date" formControlName="odate">
+        <input type="text" placeholder="Daterangepicker" formControlName="date" class="form-control" bsDaterangepicker>
         <select class="form-select" formControlName="payment">
             <option value="upi">UPI</option>
             <option value="qr">QR</option>
             <option value="net-banking">Net Banking</option>
         </select>
         <input type="text" formControlName="amount" class="form-control" name="amount" placeholder="Amount">
-        <input type="submit"  class="btn btn-success" value="Submit">
+        <input type="submit" class="btn btn-success" value="Submit">
         <span><a routerLink="/user/end">Cancel ??</a></span>
     </form>
 </div>

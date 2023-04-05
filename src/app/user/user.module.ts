@@ -15,6 +15,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatButtonModule } from '@angular/material/button';
 import { BookingHotelFormComponent } from './booking-hotel-form/booking-hotel-form.component';
 import { EndingComponent } from './ending/ending.component';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker'
 
 
 
@@ -36,6 +37,7 @@ import { EndingComponent } from './ending/ending.component';
     MatPaginatorModule,
     HttpClientModule,
     ReactiveFormsModule,
+    BsDatepickerModule.forRoot(),
     MatButtonModule,
     FormsModule
   ]
