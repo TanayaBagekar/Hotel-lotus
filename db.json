@@ -45,24 +45,40 @@
       "cpassword": "ajay@123"
     },
     {
-      "fname": "Tanaya",
-      "lname": "Bagekar",
-      "gender": "female",
-      "age": "22",
-      "phone": "7499269640",
-      "email": "Bagekartanaya31@gmail.com",
       "id": "Tanaya007",
-      "password": "Tanaya@123"
+      "oname": "Tanaya Bagekar",
+      "hname": "The-Rangoli-Hotel",
+      "email": "Bagekartanaya31@gmail.com",
+      "username": "tanaya007",
+      "phone": "07499269640",
+      "gender": "female",
+      "DOB": "2000-03-29",
+      "password": "Tanaya@123",
+      "cpassword": "tanaya@123"
     },
     {
-      "fname": "hrushi",
-      "lname": "kshisagar",
-      "gender": "male",
-      "age": "25",
-      "phone": "07499269640",
-      "email": "hrushi@gmail.com",
       "id": "hrushi007",
-      "password": "hrushi@123"
+      "oname": "Hrushi Jadhav",
+      "hname": "The Panjabi ",
+      "email": "hrushi@gmail.com",
+      "username": "hrushi007",
+      "phone": "07499269640",
+      "gender": "male",
+      "DOB": "1999-03-03",
+      "password": "hrushi@123",
+      "cpassword": "Hrushi@123"
+    },
+    {
+      "id": "shrushti008",
+      "oname": "Shrushti Amabani",
+      "hname": "The Blue Berry",
+      "email": "ShreeBagekar@123",
+      "username": "sheushti008",
+      "phone": "07499269640",
+      "gender": "female",
+      "DOB": "1997-10-13",
+      "password": "hrushi@123",
+      "cpassword": "shrushti@13"
     }
   ],
   "hotelDetails": [
