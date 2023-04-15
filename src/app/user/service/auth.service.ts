@@ -14,6 +14,10 @@ export class AuthService {
     return this.http.get('http://localhost:3000/hotelDetails')
   }
 
+  getListById(id:any){
+    return this.http.get(`http://localhost:3000/hotelDetails/${id}`)
+  }
+
   postUserData(data:any){
     return this.http.post(`http://localhost:3000/user`, data)
   }

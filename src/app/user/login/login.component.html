@@ -2,7 +2,7 @@
     <h1>User's Login Form </h1>
     <input type="text" placeholder="Username" name="username" id="username" autocomplete="off">
     <input type="password" placeholder="Password" name="pass" id="pass" autocomplete="off">
-    <input type="submit" class="btn btn-primary">
+    <input type="submit" [disabled]="loginForm.invalid" routerLink="/user/home" class="btn btn-primary">
     <div>
         <a routerLink="/">Forgot password?</a>
         <a routerLink="/user/signup">Create User Account?</a>

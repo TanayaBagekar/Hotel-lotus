@@ -4,7 +4,7 @@
       "fname": "Ajay",
       "lname": "Kharat",
       "phone": "9421322354",
-      "age": "20",
+      "age": "22",
       "gender": "male",
       "email": "kharatajay314@gmail.com",
       "id": "Ajay007",
@@ -21,26 +21,28 @@
       "password": "Tanaya@123"
     },
     {
-      "fname": "Shruti",
-      "lname": "Bagekar",
-      "phone": "9403782354",
-      "age": "20",
-      "gender": "female",
-      "email": "shruti@gmail.com",
-      "id": "Shruti007",
-      "password": "Shruti@123"
+      "fname": "hrushi",
+      "lname": "kshisagar",
+      "gender": "male",
+      "age": "25",
+      "phone": "07499269640",
+      "email": "hrushi@gmail.com",
+      "id": "hrushi007",
+      "password": "hrushi@123"
     }
   ],
   "owners": [
     {
-      "fname": "Ajay",
-      "lname": "Kharat",
-      "gender": "male",
-      "age": "20",
-      "phone": "8857822354",
-      "email": "kharatajay314@gmail.com",
       "id": "Ajay007",
-      "password": "Ajay@123"
+      "oname": "Ajay Kharat",
+      "hname": "The Grand Mehfeline",
+      "email": "kharatajay314@gmail.com",
+      "username": "ajay007",
+      "phone": "8857822354",
+      "gender": "male",
+      "DOB": "",
+      "password": "Ajay@123",
+      "cpassword": "ajay@123"
     },
     {
       "fname": "Tanaya",
@@ -51,6 +53,16 @@
       "email": "Bagekartanaya31@gmail.com",
       "id": "Tanaya007",
       "password": "Tanaya@123"
+    },
+    {
+      "fname": "hrushi",
+      "lname": "kshisagar",
+      "gender": "male",
+      "age": "25",
+      "phone": "07499269640",
+      "email": "hrushi@gmail.com",
+      "id": "hrushi007",
+      "password": "hrushi@123"
     }
   ],
   "hotelDetails": [
@@ -162,6 +174,16 @@
       "amount": "3696",
       "payment": "net-banking",
       "id": 3
+    },
+    {
+      "name": "",
+      "phone": "",
+      "email": "",
+      "age": "",
+      "date": "",
+      "amount": "",
+      "payment": "upi",
+      "id": 4
     }
   ]
 }

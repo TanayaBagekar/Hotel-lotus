@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from '../service/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -6,18 +8,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-  userLogin(item:any){
-    console.log(item)
-    console.log(item.username)
-    console.log(item.pass)
-    if(item.username === "Tanaya"){
-      if(item.pass === "Tanaya@123"){
-        location.href = 'http://localhost:4200/user/home'
+
+  password:any
+
+  constructor(private router:Router,private service:AuthService){}
+  userLogin(data: any) {
+    console.log(data)
+    this.service.getListById(data.username).subscribe((res) => {
+      console.log(res)
+      this.password = res
+      if(this.password.password === data.pass){
+        this.router.navigateByUrl('/user/home')
+        alert("admin login successfull")
       }else{
-        alert("Wrong PassWord !!")
+        this.router.navigateByUrl('/')
+        alert("please check the password")
       }
-    }else {
-      location.href = 'http://localhost:4200/pagenotFound'
-    }
+    })
   }
 }

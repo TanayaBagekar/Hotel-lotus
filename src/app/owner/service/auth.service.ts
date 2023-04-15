@@ -27,6 +27,9 @@ export class AuthService {
   registerHotel(data: any) {
     return this.http.post(this.url2, data)
   }
+  gethotelOwnerList(id:any){
+    return this.http.get(`http://localhost:3000/hotelDetails/${id}`)
+  }
 
   getHotelList() {
     return this.http.get(this.url2)

@@ -9,52 +9,23 @@ import { AuthService } from '../service/auth.service';
 })
 export class LoginComponent {
 
-  loginForm: any;
-  hotelDetails: any;
-  hotelListByOwner: any;
-  ownerData: any;
-  validOwner: any;
-  ownerSuccesData: any;
-  name: any;
+ password:any
 
-  constructor(public http: AuthService, private router: Router) { }
+ constructor(private service:AuthService,private router:Router){}
 
-
-  submit() {
-    if (this.hotelDetails) {
-      console.log(this.hotelDetails)
-      this.hotelDetails.forEach((element: any) => {
-        if (this.loginForm.value.username = element.username) {
-          this.hotelListByOwner.push(element);
-        }
-        this.http.getHotelList = this.hotelListByOwner;
-        console.log(this.http.getHotelList);
-
-      })
-
-    }
-    if (this.ownerData) {
-      this.validOwner = this.ownerData.find((dataBase: any) => {
-        return dataBase.username === this.loginForm.username && dataBase.pass === this.loginForm.value.pass
-      })
-      console.log(this.ownerSuccesData);
-
-    }
-    this.redirection()
-
-  }
-  redirection() {
-    if (this.loginForm.username === "Tanaya") {
-      if (this.loginForm.pass === "Tanaya@123") {
-        location.href = 'http://localhost:4200/owner/succes'
-      } else {
-        alert("Wrong PassWord !!")
+ submit(data:any){
+  console.log(data)
+    this.service.gethotelOwnerList(data.username).subscribe((res) => {
+      console.log(res)
+      this.password = res
+      if(this.password.password === data.pass){
+        this.router.navigateByUrl('/owner/home')
+        alert("admin login successfull")
+      }else{
+        this.router.navigateByUrl('/')
+        alert("please check the password")
       }
-    } else {
-      location.href = 'http://localhost:4200/owner/signup'
-    }
-
-
-  }
+    })
+ }
 
 }
